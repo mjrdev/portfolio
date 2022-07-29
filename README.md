@@ -1,5 +1,5 @@
-# portfolio por mjrdev [github]("https://github.com/mjrdev")
+# Portfolio por mjrdev [github]("https://github.com/mjrdev")
 
-# Meus projetos, áreas de conhecimento e estudo e um pouco sobre mim e a minha história na programação.
+Meus projetos, áreas de conhecimento e estudo e um pouco sobre mim e a minha história na programação.
 
-[portfolio](http://mjrdev.tech)
+[Portfólio](http://mjrdev.tech)
