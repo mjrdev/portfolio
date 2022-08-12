@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "dev:host": "nuxt --hostname '192.168.0.199' --port 3000"
   },
   "dependencies": {
     "core-js": "^3.19.3",
@@ -22,6 +23,8 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.4.4",
     "jest": "^27.4.4",
+    "sass": "^1.54.4",
+    "sass-loader": "10",
     "vue-jest": "^3.0.4"
   }
 }
