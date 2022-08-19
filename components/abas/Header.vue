@@ -45,7 +45,7 @@ export default {
         return {
             link
         }
-    }
+    },
 }
 </script>
 

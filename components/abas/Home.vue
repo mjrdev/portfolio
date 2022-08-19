@@ -32,6 +32,10 @@ export default script
   }
 }
 
+.content h1 {
+    text-shadow: 2pt 2pt 6pt rgba(0, 0, 0, 0.434);
+    letter-spacing: -4pt;
+}
 
 .dev-title-01 {
 

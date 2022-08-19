@@ -1,9 +1,15 @@
 <template>
 <div id="portfolio">
     <div id="home">
-        <header>
+        
+        <header class="header-extended">
             <Header/>
         </header>
+        <header :class="{ 'header-contract': true, 'header-contract-active': scrollY >= 250 }">
+            <Header/>
+        </header>
+
+        <div class="back-header"></div>
         <main>
             <Home/>
         </main>
@@ -11,35 +17,54 @@
     <div id="skills">
         <Skills/>
     </div>
+    <div id="projects">
+
+    </div>
+
+    <div id="more">
+
+    </div>
 </div>
 </template>
 <script>
-import Header from "./abas/Header.vue";
-import Home from "./abas/Home.vue";
-import Skills from "./abas/Skills.vue";
-export default {
-    components: { Header, Home, Skills }
-}
+import index from './scripts/index.js'
+
+export default index
 </script>
 <style>
-#home {
-    display: grid;
-    grid-template-areas: "h"
-                        "m";
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh 80vh;
-}
 
 header {
+    background-color: white;
+}
+
+.header-extended {
     padding: 0 14vw;
+    height: 20vh;
 }
 
-header {
-    grid-area: h;
+.header-contract {
+
+    transition: 700ms;
+
+    top: 0;
+    width: 72vw;
+    height: 10vh;
+    padding: 0 14vw;
+    position: fixed;
+    transform: translate(0vw, -10vw);
+}
+
+.header-contract-active {
+    opacity: 100;
+    transform: translate(0, 0vw);
+}
+
+#home, #portfolio, main {
+    transition: .5s;
 }
 
 main {
-    grid-area: m;
+    height: 80vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -52,5 +77,20 @@ main {
     header .painel {
         display: none;
     }
+}
+
+#skills {
+    height: 400px;
+    background-color: darkgoldenrod;
+}
+
+#projects {
+    height: 400%;
+    background-color: cadetblue;
+}
+
+#more {
+    height: 400px;
+    background-color: darkmagenta;
 }
 </style>
