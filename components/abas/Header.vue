@@ -11,20 +11,27 @@
             <ul>
 
                 <li class="painel-item">
-                    <span class="painel-item-text">home</span>
+                    <span class="painel-item-text" @click="clickSkill('main')">início</span>
                 </li>
 
                 <li class="painel-item">
-                    <span class="painel-item-text">skills</span>
+                    <span class="painel-item-text" @click="clickSkill('skill')">habilidades</span>
                 </li>
 
                 <li class="painel-item">
-                    <span class="painel-item-text">projetos</span>
+                    <span class="painel-item-text" @click="clickSkill('projects')">projetos</span>
                 </li>
 
-                <li class="painel-item">
-                    <span class="painel-item-text">mais</span>
+                <li class="painel-item item-sobre" @click="clickSkill('more')">
+                    <span class="painel-item-text" >sobre</span>
                 </li>
+
+                <li :class="{'painel-item-contact-btn':true}" @click="contact = true">
+                    contato
+                </li>
+                <div class="contact" v-if="contact">
+                    <button class="btn" @click="contact = false">x</button>
+                </div>
             </ul>
         </div>
     </nav>
@@ -32,24 +39,40 @@
 
 <script>
 
-let link =  [
-                {
-                    rel: "stylesheet",
-                    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
-                }
-            ]
+import ScrollReveal from 'scrollreveal'
+import index from './scripts/header.js'
 
-export default {
-
-    head() {
-        return {
-            link
-        }
-    },
-}
+export default index
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+@import '~assets/sass/theme';
+@import '~assets/sass/app-sizes';
+
+.contact::before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.412);
+}
+.contact::after {
+    content: " ";
+    position: fixed;
+    right: 50%;
+    width: 70vh;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.btn {
+    position: absolute;
+}
+
 
 .navbar {
 
@@ -58,12 +81,14 @@ export default {
     grid-template-rows: 100%;
     height: 100%;
     align-items: center;
+    background-color: redp;
 }
 
 .menu {
 
    justify-self: flex-start;
    font-size: 20pt;
+   color: $color-primary;
 }
 
 /*  ul  */
@@ -81,7 +106,8 @@ export default {
 .painel-item {
 
     width: 100%;
-    padding: 0 20pt;
+    padding: 0 $navbar-item-spacing;
+    align-self: center;
 
     list-style-type: none;
 }
@@ -91,9 +117,9 @@ export default {
 
 
     font-family: 'Courier Prime', monospace;
-    color:rgb(111, 111, 111);
+    color: $color-primary;
     cursor: pointer;
-    font-size: 14pt;
+    font-size: 12pt;
 
     transition: 150ms;
 
@@ -101,9 +127,55 @@ export default {
 }
 
 .painel-item-text:hover {
-    color: rgb(25, 145, 215);
-    border-bottom: 1px solid rgb(25, 145, 215);
+    color: $color-primary-dark;
+    border-bottom: 1px solid $color-primary-dark;
     transition: 150ms;
+}
+
+.item-sobre {
+    border-right: 1px solid $color-primary;
+}
+
+
+// BOTÃO DE CONTATO 
+
+.painel-item-contact-btn {
+
+    font-family: 'Courier Prime', monospace;
+
+    transition: 150ms;
+
+    width: 100%;
+    padding: 0 15pt;
+    font-size: 12pt;
+    color: $white;
+
+    list-style-type: none;
+
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: $navbar-item-spacing;
+
+    cursor: pointer;
+}
+
+.painel-item-contact-btn>span {
+    color: $white;
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.painel-item-contact-btn:hover {
+
+    border: 1px solid $color-primary;
+    background-color: $color-primary-dark;
+    color: $gray-low;
+
+    cursor: pointer;
 }
 
 </style>

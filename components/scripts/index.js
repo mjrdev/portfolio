@@ -1,10 +1,11 @@
 import Header from "../abas/Header.vue";
 import Home from "../abas/Home.vue";
 import Skills from "../abas/Skills.vue";
+import Projects from "../abas/Projects.vue";
 
 
 export default {
-    components: { Header, Home, Skills },
+    components: { Header, Home, Skills, Projects },
     data() {
         return {
             scrollY: 0,
@@ -19,14 +20,12 @@ export default {
     mounted() {
 
         let dataComponent = this
-        let a = document.addEventListener('scroll', function() {
+        let a = document.addEventListener('scroll', function(pos) {
+
             dataComponent.scrollY = window.scrollY
-            dataComponent.scrollAnimation()
         })
     },
     methods: {
-        scrollAnimation: function() {
-
-        }
+        
     }
 }

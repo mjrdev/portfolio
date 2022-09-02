@@ -1,3 +1,5 @@
+import {mapState} from "vuex"
+
 export default {
     data() {
         return {
@@ -5,11 +7,5 @@ export default {
             dev: 'Manoel Júnior'
         }
     },
-    methods: {
-        devTitle2: (obj) => {
-            setInterval(() => {
-                obj._data.dev == '"PHP"' ? obj._data.dev == '"JAVASCRIPT"' : obj._data.dev == '"PHP"'
-            } ,1000)
-        }
-    }
+    computed: mapState(['theme']) 
 }
