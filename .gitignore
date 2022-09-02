@@ -52,7 +52,6 @@ jspm_packages/
 
 # Nuxt generate
 dist/
-/dist
 
 # vuepress build output
 .vuepress/dist
@@ -60,6 +59,5 @@ dist/
 
 #
 dist
-docs
 anotações.txt
 syntax.js

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{271:function(e,n,o){"use strict";o.r(n);var t=o(64);n.default={data:function(){return{de:"Desenvolvedor",dev:"Manoel Júnior"}},computed:Object(t.b)(["theme"])}}}]);
