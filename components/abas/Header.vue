@@ -39,7 +39,6 @@
 
 <script>
 
-import ScrollReveal from 'scrollreveal'
 import index from './scripts/header.js'
 
 export default index
