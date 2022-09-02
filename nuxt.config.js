@@ -3,9 +3,20 @@ export default {
   ssr: true,
 
   generate: {
-    crawler: false
-  }
+    crawler: false,
+    subFolders: false,
+    exclude: [
+        /^\/portfolio/ // path starts with /admin
+      ]
+  },
 
+  build: {
+    publicPath: 'https://mjrdev.github.io/portfolio/'
+  },
+
+  dir: {
+    app: 'custom-app',
+  },
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
