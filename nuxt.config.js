@@ -2,21 +2,10 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
-  generate: {
-    crawler: false,
-    subFolders: false,
-    exclude: [
-        /^\/portfolio/ // path starts with /admin
-      ]
+  router: {
+    base: '/portfolio/'
   },
 
-  build: {
-    publicPath: 'https://mjrdev.github.io/portfolio/'
-  },
-
-  dir: {
-    app: 'custom-app',
-  },
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
