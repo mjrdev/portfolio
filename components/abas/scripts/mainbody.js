@@ -3,12 +3,13 @@ import {mapState} from "vuex"
 export default {
     data() {
         return {
-            de: "Desenvolvedor",
+            de: 1,
             dev: 'Manoel Júnior',
             language: "",
             run: this.writeMachineEffect(this)
         }
     },
+    computed: mapState(['user']),
     methods: {
         writeMachineEffect: function (state) {
             let vars = ['JavaScript', 'TypeScript'];

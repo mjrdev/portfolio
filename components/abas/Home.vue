@@ -5,17 +5,27 @@
 
 
 <template>
-    <div class="main-bg">
-        <div class="content app-padding">
-            <div class="container-text-static">
-                <h1 class="dev-title-01">{{de}}</h1>
-            
-                <h1 class="dev-title-02">{{dev}}</h1>
+    <div class="main-bg content">
+        <div class="titles">
+            <div>
+                <h1>
+                    Olá!
+                    Bem vindo,<br>
+                    Sou {{user.name}}
+                </h1>
+                <h1 class="title2">FullStack Developer</h1>
             </div>
+            <a href="https://github.com/mjrdev" target="_blank">
+                github.com/mjrdev
+            </a>
+        </div>
 
-            <div class="container-text-mod">
-                <h1 class="text-carrosel">{{ language }}</h1>
-            </div>
+        <div class="perfil">
+            <img src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="avata">
+        </div>
+
+        <div class="machinewrite">
+            <h1 class="languages">{{ language }}</h1>
         </div>
     </div>
 </template>
@@ -27,83 +37,80 @@
 
 .main-bg {
     height: $home-height;
-    //background-image: url("https://blog.bossabox.com/wp-content/uploads/2017/11/master.jpeg");
-    background-repeat: no-repeat;
-    background-color: rgb(250, 250, 250);
-    
+    padding: 0 $app-padding;
 }
 
 .content {
-
-    border-top: 1px solid rgb(205, 205, 205);
     
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50vh 15vh;
+    grid-template-areas:
+    "titles image"
+    "language language";
 }
 
-.content h1 {
-    
-    //text-shadow: 2pt 2pt 6pt rgba(0, 0, 0, 0.434);
-    letter-spacing: -4pt;
-}
-
-.container-text-static {
+.titles {
     color: #4C527A;
-    height: 40vh;
+    grid-area: titles;
     display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    h1 {
+
+        padding: 0; margin: 0;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-size: 40pt;
+        color: #4C527A;
+        font-weight: 900;
+        font-stretch: ultra-expanded;
+    }
+    .title2 {
+
+        padding: 0; margin: 0;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-size: 40pt;
+        color: $color-primary;
+        font-weight: 700;
+    }
 }
-.container-text-mod {
-    height: 40vh;
+
+.perfil {
+    grid-area: image;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    img {
+        height: 35vh;
+        border-radius: 30% 0 30% 0;
+    }
 }
 
-.text-carrosel {
+.machinewrite {
+    grid-area: language;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding: 0; margin: 0;
+    .languages {
 
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: clamp(7vw, 1em + 7vw, 10vw);
-    color: #4C527A;
-    font-weight: 900;
-    font-stretch: ultra-expanded;
-    letter-spacing: 3pt;
-    align-self: center;
-    justify-self: center;
+        padding: 0; margin: 0;
+
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-size: 100px;
+        color: #4C527A;
+        font-weight: 900;
+        font-stretch: ultra-expanded;
+        letter-spacing: 3pt;
+        align-self: center;
+        justify-self: center;
+    }
 }
-
-.dev-title-01 {
-
-    padding: 0; margin: 0;
-
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: clamp(7vw, 1em + 7vw, 10vw);
-    color: #4C527A;
-    font-weight: 900;
-    font-stretch: ultra-expanded;
-    letter-spacing: 3pt;
-}
-
-.dev-title-02 {
-
-    padding: 0; margin: 0;
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: clamp(6vw, 1em + 6vw, 9vw);
-    color: $color-primary;
-    font-style: italic;
-    font-weight: 700;
-}
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 1200px) {

@@ -8,6 +8,11 @@ export default {
 
   target: 'static',
 
+  generate: {
+    dir: 'docs',
+    devtools: false
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Portfólio mjrDev',
