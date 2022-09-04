@@ -48,6 +48,7 @@ export default index
 
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
+@import '~assets/sass/fonts';
 
 .contact::before {
     content: " ";
@@ -115,7 +116,7 @@ export default index
 .painel-item-text {
 
 
-    font-family: 'Courier Prime', monospace;
+    font-family: $font-secundary;
     color: $color-primary;
     cursor: pointer;
     font-size: 12pt;
@@ -140,18 +141,17 @@ export default index
 
 .painel-item-contact-btn {
 
-    font-family: 'Courier Prime', monospace;
+    font-family: $font-secundary;
 
     transition: 150ms;
 
     width: 100%;
     padding: 0 15pt;
     font-size: 12pt;
-    color: $white;
+    color: $color-primary;
 
     list-style-type: none;
 
-    background-color: $color-primary;
     border: 1px solid $color-primary;
     border-radius: 10px;
     padding: 10px;

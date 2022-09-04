@@ -1,3 +1,9 @@
+<script>
+    import script from './scripts/mainbody.js'
+    export default script
+</script>
+
+
 <template>
     <div class="main-bg">
         <div class="content app-padding">
@@ -8,15 +14,12 @@
             </div>
 
             <div class="container-text-mod">
-                <h1 class="text-carrosel">JavaScript|</h1>
+                <h1 class="text-carrosel">{{ language }}</h1>
             </div>
         </div>
     </div>
 </template>
-<script>
-import script from './scripts/mainbody.js'
-export default script
-</script>
+
 <style lang="scss" scoped>
 
 @import '~assets/sass/theme';
@@ -46,6 +49,7 @@ export default script
 }
 
 .container-text-static {
+    color: #4C527A;
     height: 40vh;
     display: flex;
     align-content: flex-end;
@@ -64,7 +68,7 @@ export default script
 
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: clamp(7vw, 1em + 7vw, 10vw);
-    color: rgb(42, 42, 42);
+    color: #4C527A;
     font-weight: 900;
     font-stretch: ultra-expanded;
     letter-spacing: 3pt;
@@ -78,7 +82,7 @@ export default script
 
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: clamp(7vw, 1em + 7vw, 10vw);
-    color: rgb(42, 42, 42);
+    color: #4C527A;
     font-weight: 900;
     font-stretch: ultra-expanded;
     letter-spacing: 3pt;
