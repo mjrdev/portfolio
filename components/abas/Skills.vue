@@ -1,32 +1,55 @@
+<script>
+import { mapState } from 'vuex'
+import SkillElement from './skills/SkillElement.vue';
+
+export default {
+    components: { SkillElement },
+    data() {
+        return {
+            skills: {
+                frameworks: {
+                    title: 'Frameworks',
+                    items: ['NodeJs', 'VueJS', 'Laravel', 'Express', 'NuxtJs','NestJs']
+                },
+                languagens: {
+                    title: 'Languagens',
+                    items: ['JavaScript', 'TypeScript', 'PHP', 'Python', 'SQL', 'HTML, CSS']
+                },
+                others: {
+                    title: 'Others',
+                    items: ['Git', 'Sass', 'Docker']
+                }
+            }
+        }
+    }
+}
+</script>
+
+
 <template>
     <div class="container-skill">
         <h1 class="skill-title">Minhas Habilidades</h1>
         
         <div class="skills-items">
             <div class="item item-1">
-                <SkillElement/>
+                <SkillElement v-bind:skills="skills.frameworks"/>
             </div>
             <div class="item item-2">
-                <SkillElement/>
+                <SkillElement v-bind:skills="skills.languagens"/>
             </div>
             <div class="item item-3">
-                <SkillElement/>
+                <SkillElement v-bind:skills="skills.others"/>
             </div>
         </div>
     </div>
 </template>
-<script>
-import { mapState } from 'vuex'
-import SkillElement from './skills/SkillElement.vue';
 
-export default {
-    computed: mapState(["theme"]),
-    components: { SkillElement }
-}
-</script>
+
+
 <style scoped lang="scss">
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
+@import '~assets/sass/fonts';
 
 .container-skill {
     padding: 0 $app-padding;
@@ -36,7 +59,7 @@ export default {
 }
 
 .skill-title {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: $font-primary;
     color: $white;
     font-size: 30pt;
 

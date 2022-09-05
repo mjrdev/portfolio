@@ -80,7 +80,7 @@ export default index
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
-    align-items: center;
+    align-items: flex-end;
     background-color: redp;
 }
 

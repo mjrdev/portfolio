@@ -11,11 +11,11 @@
                 <h1>
                     Olá!
                     Bem vindo,<br>
-                    Sou {{user.name}}
+                    Sou {{user.name}} &#x1F60E;
                 </h1>
-                <h1 class="title2">FullStack Developer</h1>
+                <h1 class="title2">FullStack Developer 👨‍💻</h1>
             </div>
-            <a href="https://github.com/mjrdev" target="_blank">
+            <a class="github" href="https://github.com/mjrdev" target="_blank">
                 github.com/mjrdev
             </a>
         </div>
@@ -59,13 +59,14 @@
     align-items: center;
     justify-content: center;
     text-align: left;
+    line-height: 45pt;
 
     h1 {
 
         padding: 0; margin: 0;
         font-family: 'Montserrat', 'Arial', sans-serif;
         font-size: 40pt;
-        color: #4C527A;
+        color: $color-secundary;
         font-weight: 900;
         font-stretch: ultra-expanded;
     }
@@ -76,6 +77,10 @@
         font-size: 40pt;
         color: $color-primary;
         font-weight: 700;
+    }
+
+    .github {
+        color: $color-secundary;
     }
 }
 
@@ -103,7 +108,7 @@
 
         font-family: 'Montserrat', 'Arial', sans-serif;
         font-size: 100px;
-        color: #4C527A;
+        color: $color-secundary;
         font-weight: 900;
         font-stretch: ultra-expanded;
         letter-spacing: 3pt;

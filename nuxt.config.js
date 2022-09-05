@@ -9,8 +9,7 @@ export default {
   target: 'static',
 
   generate: {
-    dir: 'docs',
-    devtools: false
+    dir: 'docs'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
