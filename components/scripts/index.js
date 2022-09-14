@@ -12,15 +12,15 @@ export default {
             headerFloat: true,
             scrollUp: true,
             headerAbsolute: true,
-            color: 'red'
-
+            color: 'red',
+            eventScroll: null
         }
     },
     transition: 'header',
     mounted() {
 
         let dataComponent = this
-        let a = document.addEventListener('scroll', function(pos) {
+        this.eventScroll = document.addEventListener('scroll', function(pos) {
 
             dataComponent.scrollY = window.scrollY
         })

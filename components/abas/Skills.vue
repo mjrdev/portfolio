@@ -1,26 +1,17 @@
 <script>
 import { mapState } from 'vuex'
 import SkillElement from './skills/SkillElement.vue';
+import skills from './skills.js'
 
 export default {
     components: { SkillElement },
     data() {
         return {
-            skills: {
-                frameworks: {
-                    title: 'Frameworks',
-                    items: ['NodeJs', 'VueJS', 'Laravel', 'Express', 'NuxtJs','NestJs']
-                },
-                languagens: {
-                    title: 'Languagens',
-                    items: ['JavaScript', 'TypeScript', 'PHP', 'Python', 'SQL', 'HTML, CSS']
-                },
-                others: {
-                    title: 'Others',
-                    items: ['Git', 'Sass', 'Docker']
-                }
-            }
+            skills,
+            boxSkill: true
         }
+    },
+    methods: {
     }
 }
 </script>
@@ -28,17 +19,11 @@ export default {
 
 <template>
     <div class="container-skill">
-        <h1 class="skill-title">Minhas Habilidades</h1>
+        <h1 class="title">Minhas Habilidades</h1>
         
-        <div class="skills-items">
+        <div class="skills-items" v-for="(skill, index) in skills">
             <div class="item item-1">
-                <SkillElement v-bind:skills="skills.frameworks"/>
-            </div>
-            <div class="item item-2">
-                <SkillElement v-bind:skills="skills.languagens"/>
-            </div>
-            <div class="item item-3">
-                <SkillElement v-bind:skills="skills.others"/>
+                <SkillElement :skills="skill"/>
             </div>
         </div>
     </div>
@@ -55,10 +40,11 @@ export default {
     padding: 0 $app-padding;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: center; justify-content: center; align-items: center;
+    gap: 1.3rem 0;
 }
 
-.skill-title {
+.title {
     font-family: $font-primary;
     color: $white;
     font-size: 30pt;
@@ -67,30 +53,15 @@ export default {
     padding: 5vh 0;
 }
 
-.item {
-    background-color: $white;
-    height: 60vh;
-}
 .skills-items {
-    width: 100%;
-    height: 20vh;
+    width: 60%;
 
-    display: grid;
-    grid-template-columns: 1fr 1.4fr 1fr;
-    grid-template-areas:
-    "item1 item2 item3";
-    gap: 15px;
-}
+    display: flex;
+    flex-direction: column;
 
-.item-1 {
-    grid-area: item1;
-}
-
-.item-2 {
-    grid-area: item2;
-}
-
-.item-3 {
-    grid-area: item3;
+    .item {
+        background-color: $white;
+        border-radius: 5px;
+    }
 }
 </style>

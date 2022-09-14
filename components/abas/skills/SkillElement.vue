@@ -1,17 +1,11 @@
-<template>
-    <div class="container-skill-item">
-        <h1 class="skill-item-title">{{skills.title}}</h1>
-        <ul class="languages" v-for="skill in skills.items">
-            <li class="item">{{skill}}</li>
-        </ul>
-    </div>
-</template>
-
 <script>
+import skills from '../skills';
+
 export default {
     data() {
         return {
-
+            itemExplane: false,
+            itemSelected: 0
         }
     },
     props: {
@@ -19,36 +13,30 @@ export default {
     }
 }
 </script>
-<style scoped lang="scss">
+<template>
+    <div class="container-skill-item">
+        <h1 class="title">{{skills.title}}</h1>
 
-@import '~assets/sass/theme';
-@import '~assets/sass/fonts';
+        <!---->
+        <ul class="list">
+            <li class="item" v-for="(item, index) in skills.items">
+                <img class="image-item"
+                :alt="item.name"
+                :src="item.urlIcon"
+                @mouseleave="itemExplane = false"
+                @mouseover="() => {
+                    itemSelected = index
+                    itemExplane = true
+                }"
+            >
+            </li>
+        </ul>
 
-.container-skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        <div :class="{ 'item-skill': true, 'item-explaned':itemExplane }">
+            {{skills.items[itemSelected].name}}
+            <span class="progress-bar"></span>
+        </div>
+    </div>
+</template>
 
-.skill-item-title {
-    font-family: $font-primary;
-    font-size: 17pt;
-}
-
-.languages {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.item {
-    padding: 0 10px 2px 10px;
-    font-family: $font-secundary;
-    font-size: 15pt;
-    list-style-type: none;
-    border-bottom: 1px solid $black;
-}
-</style>
+<style scoped lang="scss"> @import './SkillElement.scss'; </style>
