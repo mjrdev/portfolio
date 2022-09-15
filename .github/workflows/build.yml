@@ -15,9 +15,9 @@ jobs:
           node-version: '16.x'
       - name: Build web-app
         run: |
-          npm ci
-          npm run build
-          npm run generate
+          yarn install --frozen-lockfile
+          yarn build
+          yarn generate
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
