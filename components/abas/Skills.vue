@@ -1,7 +1,7 @@
 <script>
 import { mapState } from 'vuex'
 import SkillElement from './skills/SkillElement.vue';
-import skills from './skills.js'
+import skills from './skills/skillsScript.js'
 
 export default {
     components: { SkillElement },
@@ -21,10 +21,8 @@ export default {
     <div class="container-skill">
         <h1 class="title">Minhas Habilidades</h1>
         
-        <div class="skills-items" v-for="(skill, index) in skills">
-            <div class="item item-1">
-                <SkillElement :skills="skill"/>
-            </div>
+        <div v-for="(skill, index) in skills">
+            <SkillElement :skills="skill"/>
         </div>
     </div>
 </template>

@@ -1,0 +1,41 @@
+import Header from "./abas/header/Header.vue";
+import Home from "./abas/Home.vue";
+import Skills from "./abas/Skills.vue";
+import Projects from "./abas/Projects.vue";
+
+
+export default {
+    name: 'Main',
+    components: { Header, Home, Skills, Projects },
+    data() {
+        return {
+            scrollY: 0,
+            headerFloat: true,
+            scrollUp: true,
+            headerAbsolute: true,
+            color: 'red',
+            eventScroll: null,
+            time: null
+        }
+    },
+    transition: 'header',
+    mounted() {
+
+        let dataComponent = this;
+
+        function handleScroll() {
+            
+            clearInterval(dataComponent.time);
+
+            dataComponent.time = setTimeout(() => {
+                dataComponent.scrollY = window.scrollY
+                console.log(window.scrollY)
+            }, 20)
+        }
+
+        this.eventScroll = document.addEventListener('scroll', handleScroll)
+    },
+    methods: {
+        
+    }
+}

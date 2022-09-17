@@ -1,7 +1,8 @@
 <script>
-import skills from '../skills';
+import SkillStatus from './SkillStatus'
 
 export default {
+    components: { SkillStatus },
     data() {
         return {
             itemExplane: false,
@@ -21,21 +22,18 @@ export default {
         <ul class="list">
             <li class="item" v-for="(item, index) in skills.items">
                 <img class="image-item"
-                :alt="item.name"
-                :src="item.urlIcon"
-                @mouseleave="itemExplane = false"
-                @mouseover="() => {
-                    itemSelected = index
-                    itemExplane = true
-                }"
-            >
+                    :alt="item.name"
+                    :src="item.urlIcon"
+                    @mouseleave="itemExplane = false"
+                    @mouseover="() => {
+                        itemSelected = index
+                        itemExplane = true
+                    }"
+                >
             </li>
         </ul>
 
-        <div :class="{ 'item-skill': true, 'item-explaned':itemExplane }">
-            {{skills.items[itemSelected].name}}
-            <span class="progress-bar"></span>
-        </div>
+        <SkillStatus :class="{ 'item-explaned':itemExplane }" :skill="skills.items[itemSelected]"/>
     </div>
 </template>
 

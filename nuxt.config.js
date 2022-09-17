@@ -36,6 +36,7 @@ export default {
     '~assets/css/main_style', 
     '~assets/sass/theme',
     '~assets/sass/app-sizes',
+    '~assets/sass/fonts',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,8 +59,8 @@ export default {
   build: {
   },
 
-  /*
+
   server: {
     host: '0.0.0.0',
-  } */
+  }
 }

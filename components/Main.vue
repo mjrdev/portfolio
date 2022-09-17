@@ -27,7 +27,7 @@
 </div>
 </template>
 <script>
-import index from './scripts/index.js'
+import index from './mainScript.js'
 
 export default index
 </script>

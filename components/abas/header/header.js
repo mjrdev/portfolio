@@ -24,7 +24,21 @@ export default {
     data() {
         return {
             aba: 0,
-            contact: false
+            contact: false,
+            abas: [
+                {
+                    content: 'início', action: 'main'
+                },
+                {
+                    content: 'habilidades', action: 'skill' 
+                }, 
+                {
+                    content: 'projetos', action: 'project' 
+                },
+                {
+                    content: 'mais', action: 'more' 
+                }
+            ]
         }
     },
     head() {

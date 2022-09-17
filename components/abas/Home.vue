@@ -65,7 +65,7 @@
 
         padding: 0; margin: 0;
         font-family: 'Montserrat', 'Arial', sans-serif;
-        font-size: 40pt;
+        font-size: 2.2rem;
         color: $color-secundary;
         font-weight: 900;
         font-stretch: ultra-expanded;

@@ -1,51 +1,3 @@
-<template>
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-
-        <div class="menu">
-            <span class="material-icons">menu</span>
-        </div>
-
-        <div class="painel">
-            <ul>
-
-                <li class="painel-item">
-                    <span class="painel-item-text" @click="clickSkill('main')">início</span>
-                </li>
-
-                <li class="painel-item">
-                    <span class="painel-item-text" @click="clickSkill('skill')">habilidades</span>
-                </li>
-
-                <li class="painel-item">
-                    <span class="painel-item-text" @click="clickSkill('projects')">projetos</span>
-                </li>
-
-                <li class="painel-item item-sobre" @click="clickSkill('more')">
-                    <span class="painel-item-text" >sobre</span>
-                </li>
-
-                <li :class="{'painel-item-contact-btn':true}" @click="contact = true">
-                    contato
-                </li>
-                <div class="contact" v-if="contact">
-                    <button class="btn" @click="contact = false">x</button>
-                </div>
-            </ul>
-        </div>
-    </nav>
-</template>
-
-<script>
-
-import index from './scripts/header.js'
-
-export default index
-</script>
-
-<style lang="scss" scoped>
-
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 @import '~assets/sass/fonts';
@@ -59,6 +11,7 @@ export default index
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.412);
 }
+
 .contact::after {
     content: " ";
     position: fixed;
@@ -74,13 +27,13 @@ export default index
 }
 
 
-.navbar {
+nav {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
     height: 100%;
-    align-items: flex-end;
+    align-items: center;
     background-color: redp;
 }
 
@@ -176,6 +129,3 @@ export default index
 
     cursor: pointer;
 }
-
-</style>
-
