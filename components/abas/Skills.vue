@@ -35,7 +35,6 @@ export default {
 @import '~assets/sass/fonts';
 
 .container-skill {
-    padding: 0 $app-padding;
     display: flex;
     flex-direction: column;
     align-content: center; justify-content: center; align-items: center;

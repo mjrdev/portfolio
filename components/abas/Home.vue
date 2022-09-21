@@ -37,7 +37,6 @@
 
 .main-bg {
     height: $home-height;
-    padding: 0 $app-padding;
 }
 
 .content {

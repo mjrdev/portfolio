@@ -30,7 +30,6 @@ export default {
 @import '~assets/sass/app-sizes';
 
 .container-skill {
-    padding: 0 $app-padding;
     display: flex;
     flex-direction: column;
     align-content: center;

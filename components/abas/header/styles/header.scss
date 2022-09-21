@@ -2,49 +2,17 @@
 @import '~assets/sass/app-sizes';
 @import '~assets/sass/fonts';
 
-.contact::before {
-    content: " ";
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.412);
-}
-
-.contact::after {
-    content: " ";
-    position: fixed;
-    right: 50%;
-    width: 70vh;
-    height: 70vh;
-    background-color: rgb(255, 255, 255);
-    
-}
-
-.btn {
-    position: absolute;
-}
-
-
 nav {
 
-    display: grid;
+    display: grid; justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
-    height: 100%;
+    height: 10rem;
     align-items: center;
-    background-color: redp;
-}
-
-.menu {
-
-   justify-self: flex-start;
-   font-size: 20pt;
-   color: $color-primary;
 }
 
 /*  ul  */
+
 .painel {
     
     justify-self: flex-end;
@@ -56,7 +24,8 @@ nav {
 }
 
 /*  li  */
-.painel-item {
+
+.item {
 
     width: 100%;
     padding: 0 $navbar-item-spacing;
@@ -66,8 +35,8 @@ nav {
 }
 
 /*  span  */
-.painel-item-text {
 
+.item-text {
 
     font-family: $font-secundary;
     color: $color-primary;
@@ -98,16 +67,11 @@ nav {
 
     transition: 150ms;
 
-    width: 100%;
-    padding: 0 15pt;
-    font-size: 12pt;
-    color: $color-primary;
-
+    width: 100%; padding: 5pt 10pt;
+    font-size: 12pt; color: $color-primary;
     list-style-type: none;
 
-    border: 1px solid $color-primary;
-    border-radius: 10px;
-    padding: 10px;
+    border: 1px solid $color-primary; border-radius: 10px;
     margin-left: $navbar-item-spacing;
 
     cursor: pointer;

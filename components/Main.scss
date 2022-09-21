@@ -1,0 +1,28 @@
+
+@import '~assets/sass/app-sizes';
+@import '~assets/sass/theme';
+
+#portfolio {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+#header, #home, #skill, #project, #more {
+    width: $lg;
+}
+
+@media only screen and (max-width: ($lg + 100px)) {
+    #header, #home, #skill, #project, #more {
+        width: $md;
+    }
+}
+
+@media only screen and (max-width: ($md + 50px)) {
+    #header, #home, #skill, #project, #more {
+        width: 95%;
+    }
+}
+
+#more {
+    height: 400px;
+    background-color: $gray-high;
+}
