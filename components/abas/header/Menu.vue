@@ -1,7 +1,7 @@
 <script>
-import index from './menuScript.js'
+import menuScript from './menuScript.js'
 
-export default index
+export default menuScript
 </script>
 
 <template>
