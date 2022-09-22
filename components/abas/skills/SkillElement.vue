@@ -1,5 +1,5 @@
 <script>
-import SkillStatus from './SkillStatus'
+import SkillStatus from './SkillStatus.vue'
 
 export default {
     components: { SkillStatus },
