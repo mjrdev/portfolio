@@ -1,46 +1,8 @@
-<script>
-    import script from './scripts/mainbody.js'
-    export default script
-</script>
-
-
-<template>
-    <div class="main-bg content">
-        <div class="titles">
-            <div>
-                <h1>
-                    Olá!
-                    Bem vindo,<br>
-                    Sou {{user.name}} &#x1F60E;
-                </h1>
-                <h1 class="title2">FullStack Developer 👨‍💻</h1>
-            </div>
-            <a class="github" href="https://github.com/mjrdev" target="_blank">
-                github.com/mjrdev
-            </a>
-        </div>
-
-        <div class="perfil">
-            <img src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="avata">
-        </div>
-
-        <div class="machinewrite">
-            <h1 class="languages">{{ language }}</h1>
-        </div>
-    </div>
-</template>
-
-<style lang="scss" scoped>
-
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 
-.main-bg {
-    height: $home-height;
-}
-
 .content {
-    
+    margin: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50vh 15vh;
@@ -52,34 +14,44 @@
 .titles {
     color: #4C527A;
     grid-area: titles;
-    display: flex;
+    display: flex; flex-wrap: wrap;
     flex-direction: column;
 
-    align-items: center;
     justify-content: center;
     text-align: left;
-    line-height: 45pt;
 
-    h1 {
+    .title-1 {
 
         padding: 0; margin: 0;
         font-family: 'Montserrat', 'Arial', sans-serif;
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         color: $color-secundary;
         font-weight: 900;
         font-stretch: ultra-expanded;
+        line-height: 2.5rem;
     }
-    .title2 {
+    .title-2 {
 
         padding: 0; margin: 0;
         font-family: 'Montserrat', 'Arial', sans-serif;
-        font-size: 40pt;
+        font-size: 3rem;
         color: $color-primary;
         font-weight: 700;
+        line-height: 3rem;
+        margin: 1.5rem 0 0 0;
+        align-self: center;
+        
+    }
+    .title-2::after {
+        content: "👨‍💻";
     }
 
     .github {
+        align-self: center;
         color: $color-secundary;
+        height: 2rem;
+        font-size: 12pt;
+        margin: 0; padding: 0;
     }
 }
 
@@ -90,7 +62,7 @@
     align-items: center;
 
     img {
-        height: 35vh;
+        height: 40vh; margin-top: 1rem;
         border-radius: 30% 0 30% 0;
     }
 }
@@ -100,13 +72,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 
     .languages {
 
         padding: 0; margin: 0;
 
         font-family: 'Montserrat', 'Arial', sans-serif;
-        font-size: 100px;
+        font-size: 65pt;
         color: $color-secundary;
         font-weight: 900;
         font-stretch: ultra-expanded;
@@ -115,13 +88,3 @@
         justify-self: center;
     }
 }
-
-
-@media only screen and (max-width: 1200px) {
-  .content {
-    padding: 0 7vw;
-    
-  }
-}
-
-</style>
