@@ -13,18 +13,22 @@
     display: flex; justify-content: center;
 }
 
-#header, #home, #skill, #project, #more {
+.projects-container {
+    display: flex; justify-content: center;
+}
+
+#header, #home, #skill, #projects, #more {
     width: $lg;
 }
 
 @media only screen and (max-width: ($lg + 100px)) {
-    #header, #home, #skill, #project, #more {
+    #header, #home, #skill, #projects, #more {
         width: $md;
     }
 }
 
 @media only screen and (max-width: ($md + 50px)) {
-    #header, #home, #skill, #project, #more {
+    #header, #home, #skill, #projects, #more {
         width: 90%;
     }
 }

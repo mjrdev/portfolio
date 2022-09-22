@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div class="skill">
-        <h1 class="title">Minhas Habilidades</h1>
+        <h1 class="title" data-aos="fade-up">Minhas Habilidades</h1>
         
         <div v-for="(skill, index) in skills" class="skill-container">
             <SkillElement :skills="skill"/>
@@ -45,6 +45,7 @@ export default {
 
 .skill-container {
     width: 70%;
+    margin: 1rem 0;
 }
 
 .title {

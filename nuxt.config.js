@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
 
   router: {
     base: '/portfolio/'
@@ -41,7 +41,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@plugins/timeAnimation'
+    { src: '~/plugins/vue-scroll-reveal.js', mode: 'client', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,14 +51,13 @@ export default {
   buildModules: [
   ],
 
+  build: {
+    transpile: ['vue-scroll-reveal']
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-
 
   server: {
     host: '0.0.0.0',

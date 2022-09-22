@@ -15,7 +15,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container-skill-item">
+    <div class="container-skill-item" data-aos="fade-up">
         <h1 class="title">{{skills.title}}</h1>
 
         <!---->

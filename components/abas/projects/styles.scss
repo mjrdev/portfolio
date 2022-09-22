@@ -1,0 +1,32 @@
+@import '~assets/sass/theme';
+@import '~assets/sass/app-sizes';
+
+.container-skill {
+    display: flex;
+    flex-direction: column;
+    align-content: center; align-items: center;
+}
+
+.skill-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $color-primary;
+    font-size: 30pt;
+
+    align-self: center;
+    padding: 5vh 0;
+}
+
+.project-container {
+
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 2rem;
+}
+
+.project-item {
+    background-color: $white;
+    width: 10rem; height: 10rem;
+    background-color: $color-primary;
+}

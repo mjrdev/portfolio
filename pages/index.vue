@@ -1,5 +1,5 @@
 <template>
-  <Main/>
+  <Main class="v-scroll-reveal"/>
 </template>
 
 <script>
