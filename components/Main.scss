@@ -7,6 +7,12 @@
     
 }
 
+.skill-container {
+    width: 100%;
+    background-color: $color-primary;
+    display: flex; justify-content: center;
+}
+
 #header, #home, #skill, #project, #more {
     width: $lg;
 }

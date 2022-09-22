@@ -1,7 +1,7 @@
 <script>
 import { mapState } from 'vuex'
-import SkillElement from './skills/SkillElement.vue';
-import skills from './skills/skillsScript.js'
+import SkillElement from './SkillElement.vue';
+import skills from './skillsScript.js'
 
 export default {
     components: { SkillElement },
@@ -18,10 +18,10 @@ export default {
 
 
 <template>
-    <div class="container-skill">
+    <div class="skill">
         <h1 class="title">Minhas Habilidades</h1>
         
-        <div v-for="(skill, index) in skills">
+        <div v-for="(skill, index) in skills" class="skill-container">
             <SkillElement :skills="skill"/>
         </div>
     </div>
@@ -33,12 +33,18 @@ export default {
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 @import '~assets/sass/fonts';
+@import 'skill-devices';
 
-.container-skill {
+.skill {
     display: flex;
     flex-direction: column;
     align-content: center; justify-content: center; align-items: center;
-    gap: 1.3rem 0;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.skill-container {
+    width: 70%;
 }
 
 .title {
@@ -47,7 +53,7 @@ export default {
     font-size: 30pt;
 
     align-self: center;
-    padding: 5vh 0;
+    padding: 1rem; margin: 0;
 }
 
 .skills-items {

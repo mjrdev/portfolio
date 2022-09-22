@@ -6,13 +6,24 @@
 
 <template>
 <div id="portfolio">
-    <Header id="header"/>
-    <Home id="home"/>
-    <Skills id="skill"/>
-    <Projects id="projects"/>
+    <div class="header-container">
+        <Header id="header"/>
+    </div>
 
-    <div id="more" data-container-item="more">
+    <div class="home-container">
+        <Home id="home"/>
+    </div>
+    
+    <div class="skill-container">
+        <Skills id="skill"/>
+    </div>
 
+    <div class="projects-container">
+        <Projects id="projects"/>
+    </div>
+
+    <div class="more-container">
+        <div id="more" data-container-item="more"></div>
     </div>
 </div>
 </template>

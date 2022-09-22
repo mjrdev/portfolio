@@ -1,6 +1,6 @@
 import Header from "./abas/header/Header.vue";
 import Home from "./abas/home/Home.vue";
-import Skills from "./abas/Skills.vue";
+import Skills from "./abas/skills/Skills.vue";
 import Projects from "./abas/Projects.vue";
 
 
