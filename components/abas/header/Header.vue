@@ -1,5 +1,5 @@
 <script>
-import index from './index.js'
+import index from './headerScript.js'
 
 export default index
 </script>

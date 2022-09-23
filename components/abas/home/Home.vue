@@ -1,12 +1,12 @@
 <script>
-    import script from './index.js'
+    import script from './homeScript.js'
     export default script
 </script>
 
 
 <template>
-    <div class="content">
-        <div class="titles" data-aos="fade-right" data-aos-duration="1000">
+    <div class="content" data-aos="fade-up">
+        <div class="titles">
             <h1 class="title-1">
                     Olá!
                     Bem vindo,<br>
@@ -18,12 +18,12 @@
             </a>
         </div>
 
-        <div class="perfil" data-aos="fade-left" data-aos-duration="1000">
+        <div class="perfil">
             <img src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="avata">
         </div>
         
 
-        <div class="machinewrite" data-aos="fade-up" data-aos-duration="1000">
+        <div class="machinewrite">
             <h1 class="languages">{{ language }}</h1>
         </div>
     </div>
