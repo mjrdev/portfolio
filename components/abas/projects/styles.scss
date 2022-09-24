@@ -1,57 +1,29 @@
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 
-.container-skill {
-    display: flex;
+#projects {
+    display: flex; width: 100%;
     flex-direction: column;
     align-content: center; align-items: center;
     margin: 6rem 0;
+    
+
+    .title-projects {
+        margin: 0;
+    }
 }
 
+.container-projects {
 
-.project-container {
-
-    display: flex;
+    width: 100%;
+    display: flex; position: relative;
     justify-content: center; align-items: center;
     gap: 2rem 2rem;
+    transform: translateX(-100%);
 
-    .arrow {
-        cursor: pointer;
-        user-select: none;
-        font-size: 20pt;
-        transition: .15s;
-
-    }
-
-    .arrow:hover {
-        transform: scale(1.1);
-    }
-}
-
-.project-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.project-item {
-    width: 9rem;
-    transition: 150ms;
-    opacity: 100%;
-}
-
-.animation {
-    animation: opacity;
-    animation-duration: .30s;
-}
-
-
-@keyframes opacity {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
+    .item-project {
+        flex: 0 0 200px;
+        width: 200px; height: 200px;
+        background-color: blue;
     }
 }

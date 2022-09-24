@@ -35,18 +35,18 @@
 }
 
 
-#header, #home, #skill, #projects, #about {
+#header, #home, #skill, #about {
     width: $lg;
 }
 
 @media only screen and (max-width: ($lg + 100px)) {
-    #header, #home, #skill, #projects, #about {
+    #header, #home, #skill, #about {
         width: $md;
     }
 }
 
 @media only screen and (max-width: ($md + 50px)) {
-    #header, #home, #skill, #projects, #about {
+    #header, #home, #skill, #about {
         width: 90%;
     }
 }
