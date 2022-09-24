@@ -68,7 +68,7 @@
                     'animation': animation
                 }"
                 v-for="(i, index) in projectsList"
-                v-if="index < size()"
+                v-if="index < 3"
                 :project="projectsList[index + carouselCount]"
                 />
 
