@@ -32,7 +32,6 @@ export default {
 
             dataComponent.time = setTimeout(() => {
                 dataComponent.scrollY = window.scrollY
-                console.log(window.scrollY)
             }, 20)
         }
 

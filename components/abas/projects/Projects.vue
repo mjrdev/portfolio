@@ -50,36 +50,6 @@
         <h1 class="title-projects" >Projetos</h1>
         
 
-<<<<<<< HEAD
-            <span class="material-symbols-outlined arrow"
-            @click="carouselUse(-1)"
-            :style="{
-                color: carouselCount == 0 ? '#b0b0b0' : '#424ed0'
-            }"
-            >
-                chevron_left
-            </span>
-
-            <div class="project-items">
-
-                <Item :class="{
-                    'project-item': true,
-                    'animation': animation
-                }"
-                v-for="(i, index) in projectsList"
-                v-if="index < 3"
-                :project="projectsList[index + carouselCount]"
-                />
-
-            </div>
-            
-            <span class="material-symbols-outlined arrow"
-            @click="carouselUse(1)"
-            :style="{
-                color: carouselCount + 3 == projectsList.length  ? '#b0b0b0' : '#424ed0'
-            }"
-            >chevron_right</span>
-=======
         <div class="carousel">
             <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>
                 <div :class="{
@@ -89,7 +59,6 @@
                     <p>{{projectsList[indexItemActive].description}}</p>
                 </div>
             <span class="material-symbols-outlined arrow" @click="carouselScroll('right')">chevron_right</span>
->>>>>>> project
         </div>
 
         <div class="container-projects">
