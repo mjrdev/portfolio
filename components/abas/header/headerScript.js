@@ -1,5 +1,5 @@
 import setScroll from './scripts/scroll.js'
-import Menu from './menuScript'
+import Menu from './Menu.vue'
 
 let link =  [
     {

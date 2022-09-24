@@ -5,28 +5,53 @@
     display: flex;
     flex-direction: column;
     align-content: center; align-items: center;
+    margin: 6rem 0;
 }
 
-.skill-title {
-    font-family: 'Montserrat', Arial, sans-serif;
-    color: $color-primary;
-    font-size: 30pt;
-
-    align-self: center;
-    padding: 5vh 0;
-}
 
 .project-container {
 
     display: flex;
-    width: 70%;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; align-items: center;
     gap: 2rem 2rem;
+
+    .arrow {
+        cursor: pointer;
+        user-select: none;
+        font-size: 20pt;
+        transition: .15s;
+
+    }
+
+    .arrow:hover {
+        transform: scale(1.1);
+    }
+}
+
+.project-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .project-item {
-    background-color: $white;
-    width: 10rem; height: 10rem;
-    background-color: $color-primary;
+    width: 9rem;
+    transition: 150ms;
+    opacity: 100%;
+}
+
+.animation {
+    animation: opacity;
+    animation-duration: .30s;
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }

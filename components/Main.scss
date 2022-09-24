@@ -7,6 +7,16 @@
     
 }
 
+.header-container {
+    width: 100%;
+    display: flex; justify-content: center;
+}
+
+.home-container {
+    width: 100%;
+    display: flex; justify-content: center;
+}
+
 .skill-container {
     width: 100%;
     background-color: $color-primary;
@@ -14,27 +24,29 @@
 }
 
 .projects-container {
+    width: 100%;
     display: flex; justify-content: center;
 }
 
-#header, #home, #skill, #projects, #more {
+.about-container {
+    width: 100%;
+    display: flex; justify-content: center;
+    background-color: #f3f3f3;
+}
+
+
+#header, #home, #skill, #projects, #about {
     width: $lg;
 }
 
 @media only screen and (max-width: ($lg + 100px)) {
-    #header, #home, #skill, #projects, #more {
+    #header, #home, #skill, #projects, #about {
         width: $md;
     }
 }
 
 @media only screen and (max-width: ($md + 50px)) {
-    #header, #home, #skill, #projects, #more {
+    #header, #home, #skill, #projects, #about {
         width: 90%;
     }
-}
-
-
-#more {
-    height: 400px;
-    background-color: $gray-high;
 }

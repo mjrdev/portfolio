@@ -8,6 +8,7 @@
     transition: .25s;
     gap: 0.1rem 0;
     width: 100%;
+    border-radius: 0.5rem;
 
     background-color: #fff;
 }
@@ -40,10 +41,12 @@
         .image-item {
             width: 40px;
             transition: .25s;
+            filter: saturate(0) brightness(1);
         }
 
         .image-item:hover {
             transform: scale(1.2);
+            filter: none;
         }
     }
 }

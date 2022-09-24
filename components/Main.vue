@@ -22,10 +22,10 @@
         <Projects id="projects"/>
     </div>
 
-    <div class="more-container">
-        <div id="more" data-container-item="more"></div>
+    <div class="about-container">
+        <About id="about"/>
     </div>
 </div>
 </template>
 
-<style lang="scss"> @import 'Main.scss' </style>
+<style lang="scss"> @import 'Main.scss'; </style>

@@ -11,6 +11,7 @@
     "dev:host": "nuxt --hostname '192.168.0.199' --port 3000"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.3",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "core-js": "^3.19.3",

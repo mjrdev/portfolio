@@ -5,7 +5,7 @@
 
 
 <template>
-    <div class="content" data-aos="fade-up">
+    <div class="content" data-aos="fade-up" data-aos-duration="900">
         <div class="titles">
             <h1 class="title-1">
                     Olá!

@@ -27,7 +27,8 @@ export default {
       { name:"msapplication-TileColor", content:"#ffffff" }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' }
     ]
   },
 
@@ -41,7 +42,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/vue-scroll-reveal.js', mode: 'client', ssr: false }
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -1,15 +1,40 @@
 
 
 @media only screen and (max-width: $lg) {
-    .project-item {
-        width: 10vw; height: 18vw;
+    .container-skill {
+        .project-container {
+            width: 80%;
+            .project-item {
+                width: 12rem; height: 12rem;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: $md) {
+    .container-skill {
+        .project-container {
+            width: 100%;
 
+            .project-item {
+                width: 14rem; height: 14rem;
+            }
+        }
+
+        
+    }
 }
 
 @media only screen and (max-width: $sm) {
+    .container-skill {
+        .project-container {
+            width: 100%;
 
+            .project-item {
+                width: 17rem; height: 17rem;
+            }
+        }
+
+        
+    }
 }
