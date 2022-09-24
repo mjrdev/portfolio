@@ -1,6 +1,8 @@
 export default [
     {
-        title: 'jogo da velha', description: 'none', url: 'http://github.com/mjrdev'
+        title: 'Jogo da Velha',
+        description: 'Jogo feito puramente em JavaScript, HTML, CSS',
+        url: 'http://github.com/mjrdev'
     },
     {
         title: 'Client Riot', description: 'none', url: 'http://github.com/mjrdev'
@@ -9,9 +11,12 @@ export default [
         title: 'Aplicativo de Tarefas', description: 'none', url: 'http://github.com/mjrdev'
     },
     {
-        title: 'CRUD nodeJS', description: 'none', url: 'http://github.com/mjrdev'
+        title: 'crud js', description: 'none', url: 'http://github.com/mjrdev'
     },
     {
-        title: 'Framework PHP', description: 'none', url: 'http://github.com/mjrdev'
-    }
+        title: 'php', description: 'none', url: 'http://github.com/mjrdev'
+    },
+    {
+        title: 'app react native', description: 'none', url: 'http://github.com/mjrdev'
+    },
 ]

@@ -7,10 +7,10 @@ export default {
 <template>
 <div class="container-about" >
 
-    <div class="image" data-aos="fade-right">
+    <div class="image" data-aos="fade-up">
         <img src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="" width="250px">
     </div>
-    <div class="content" data-aos="fade-left">
+    <div class="content" data-aos="fade-up">
         <h1>Manoel Gomes L Júnior</h1>
         <p>Apaixonado por tecnológia e games, desdes os meus 8 anos estou nesse mundo e a curiosidade sempre esteve presente</p>
     </div>

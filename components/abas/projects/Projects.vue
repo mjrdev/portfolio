@@ -1,57 +1,56 @@
 <script>
-    import Item from './Item'
     import projectsList from './projectsList.js'
     
     export default {
         name: "Projects",
-        components: { Item },
         data() {
             return {
-                contract: true,
                 projectsList,
-                carouselCount: 0,
+                indexItemActive: 0,
+                carouselScrollActive: true,
                 animation: false,
-                sizesDevices: {
-                    lg: 1000, md: 800, sm: 600
-                }
             }
-        },
-        computed: {
-        
         },
         methods: {
-            carouselUse: function(count) {
-                if(
-                    count == 1 && this.carouselCount + 3 < this.projectsList.length && this.animation == false
-                ) {
-                    this.carouselCount++
-                    this.carouselAnimation()
-                } else if (
-                    count == -1 && this.carouselCount > 0 && this.animation == false
-                ) {
-                    this.carouselCount--
-                    this.carouselAnimation()
+            carouselScroll(direction) {
+
+                switch (direction) {
+                    case 'right':
+                        {
+                            if(this.indexItemActive < projectsList.length - 1 && this.carouselScrollActive) {
+                                this.indexItemActive++
+                                this.animation = true
+                                this.carouselScrollActive = false
+                            }
+                        }
+                        break;
+                    case 'left':
+                        {
+                            if(this.indexItemActive > 0 && this.carouselScrollActive) {
+                                this.indexItemActive--
+                                this.animation = true
+                                this.carouselScrollActive = false
+                            }
+                        }
+                        break;
                 }
-            },
 
-            carouselAnimation: function () {
-                const data = this
-                const time = setTimeout(function() {
-                    data.animation = false
-                }, 300)
 
-                this.animation = true
+                setTimeout(() => {
+                    this.animation = false
+                    this.carouselScrollActive = true
+                }, 400)
             }
-    }
+        }
 }
 </script>
 
 <template>
-    <div class="container-skill" >
-        <h1 class="skill-title" data-aos="fade-up">Projetos</h1>
+    <div class="projects" data-aos="fade-up">
+        <h1 class="title-projects" >Projetos</h1>
         
-        <div class="project-container" data-aos="fade-up">
 
+<<<<<<< HEAD
             <span class="material-symbols-outlined arrow"
             @click="carouselUse(-1)"
             :style="{
@@ -80,9 +79,27 @@
                 color: carouselCount + 3 == projectsList.length  ? '#b0b0b0' : '#424ed0'
             }"
             >chevron_right</span>
+=======
+        <div class="carousel">
+            <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>
+                <div :class="{
+                    'item-project': true, 'animation-opacity': animation
+                }">
+                    <h1>{{projectsList[indexItemActive].title}}</h1>
+                    <p>{{projectsList[indexItemActive].description}}</p>
+                </div>
+            <span class="material-symbols-outlined arrow" @click="carouselScroll('right')">chevron_right</span>
+>>>>>>> project
         </div>
 
-        
+        <div class="container-projects">
+
+            <div class="item-project" v-for="(pjt, index) in projectsList">
+                <h1>{{pjt.title}}</h1>
+                <p>{{pjt.description}}</p>
+            </div>
+
+        </div>
     </div>
 </template>
 

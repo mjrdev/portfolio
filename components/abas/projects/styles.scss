@@ -1,57 +1,85 @@
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 
-.container-skill {
+.projects {
     display: flex;
     flex-direction: column;
-    align-content: center; align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 6rem 0;
+    
+
+    .title-projects {
+        font-family: $font-primary;
+        margin: 0;
+    }
 }
 
+.container-projects {
 
-.project-container {
+    display: flex; position: relative;
+    justify-content: center; align-items: center; flex-wrap: wrap;
+    gap: 30px; margin-top: 2rem;
+    
 
+    .item-project {
+        display: flex; flex-direction: column; justify-content: end; align-items: center;
+        flex: 0 0 200px;
+        width: 200px; height: 200px;
+        background-color: $color-primary;
+
+        h1 {
+            font-size: 12pt;
+            color: $white;
+            margin: 0;
+        }
+
+        p {
+            font-size: 8pt;
+            color: $white;
+            margin: 0 0.4rem 0.4rem 0.4rem;
+            text-align: justify;
+        }
+    }
+}
+
+.carousel {
     display: flex;
-    justify-content: center; align-items: center;
-    gap: 2rem 2rem;
+    align-items: center; justify-content: center;
+
+    .item-project {
+        display: flex; flex-direction: column; justify-content: end; align-items: center;
+        flex: 0 0 300px;
+        width: 300px; height: 300px;
+        background-color: $color-primary;
+
+        h1 {
+            font-size: 12pt;
+            color: $white;
+            margin: 0;
+        }
+
+        p {
+            font-size: 8pt;
+            color: $white;
+            margin: 0 0.4rem 0.4rem 0.4rem;
+            text-align: justify;
+        }
+    }
+
+    .animation-opacity {
+        animation-name: opacity; animation-duration: .70s;
+    }
+
+    @keyframes opacity {
+        from { opacity: 0%; }
+        to { opacity: 100%; }
+    }
 
     .arrow {
         cursor: pointer;
         user-select: none;
-        font-size: 20pt;
-        transition: .15s;
-
-    }
-
-    .arrow:hover {
-        transform: scale(1.1);
     }
 }
 
-.project-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.project-item {
-    width: 9rem;
-    transition: 150ms;
-    opacity: 100%;
-}
-
-.animation {
-    animation: opacity;
-    animation-duration: .30s;
-}
-
-
-@keyframes opacity {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
