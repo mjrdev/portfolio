@@ -1,29 +1,85 @@
 @import '~assets/sass/theme';
 @import '~assets/sass/app-sizes';
 
-#projects {
-    display: flex; width: 100%;
+.projects {
+    display: flex;
     flex-direction: column;
-    align-content: center; align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 6rem 0;
     
 
     .title-projects {
+        font-family: $font-primary;
         margin: 0;
     }
 }
 
 .container-projects {
 
-    width: 100%;
     display: flex; position: relative;
-    justify-content: center; align-items: center;
-    gap: 2rem 2rem;
-    transform: translateX(-100%);
+    justify-content: center; align-items: center; flex-wrap: wrap;
+    gap: 30px; margin-top: 2rem;
+    
 
     .item-project {
+        display: flex; flex-direction: column; justify-content: end; align-items: center;
         flex: 0 0 200px;
         width: 200px; height: 200px;
-        background-color: blue;
+        background-color: $color-primary;
+
+        h1 {
+            font-size: 12pt;
+            color: $white;
+            margin: 0;
+        }
+
+        p {
+            font-size: 8pt;
+            color: $white;
+            margin: 0 0.4rem 0.4rem 0.4rem;
+            text-align: justify;
+        }
     }
 }
+
+.carousel {
+    display: flex;
+    align-items: center; justify-content: center;
+
+    .item-project {
+        display: flex; flex-direction: column; justify-content: end; align-items: center;
+        flex: 0 0 300px;
+        width: 300px; height: 300px;
+        background-color: $color-primary;
+
+        h1 {
+            font-size: 12pt;
+            color: $white;
+            margin: 0;
+        }
+
+        p {
+            font-size: 8pt;
+            color: $white;
+            margin: 0 0.4rem 0.4rem 0.4rem;
+            text-align: justify;
+        }
+    }
+
+    .animation-opacity {
+        animation-name: opacity; animation-duration: .70s;
+    }
+
+    @keyframes opacity {
+        from { opacity: 0%; }
+        to { opacity: 100%; }
+    }
+
+    .arrow {
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
