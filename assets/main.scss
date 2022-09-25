@@ -1,0 +1,12 @@
+@import '~assets/sass/fonts';
+
+html, body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-secundary, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

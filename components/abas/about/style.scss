@@ -1,31 +1,40 @@
 @import '~/assets/sass/theme';
 @import '~/assets/sass/app-sizes';
+@import '~/assets/sass/fonts';
 
 .container-about, #about {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 6rem 0;
-    grid-gap: 2rem;
-    align-items: center ;
 
+    width: 100%;
+    margin: 6rem 0;
+    display: flex; justify-content: center;
+
+    .img {
+        border-radius: 0.5rem;
+        width: 15rem; height: 15rem;
+        float: left;
+        margin: 1rem;
+    }
+    
     .content {
 
-        
+        width: 80%;
+    
         h1 {
-            text-align: left;
+            font-family: $font-primary, sans-serif;
             color: $color-primary;
+            font-size: 2.5rem;
+            margin: 0.5rem;
         }
-    }
 
-    .image {
-        justify-self: center;
-        img {
-            border-radius: 50%;
-            width: 15rem; height: 15rem;
+        h3 {
+            font-size: 14pt;
+            margin: 0;
         }
-    }
 
-    @media screen {
-        
+        p {
+            font-size: 12pt;
+            margin-top: 0;
+            text-align: justify;
+        }
     }
 }

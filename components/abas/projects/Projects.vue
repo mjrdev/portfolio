@@ -48,7 +48,6 @@
 <template>
     <div class="projects" data-aos="fade-up">
         <h1 class="title-projects" >Projetos</h1>
-        
 
         <div class="carousel">
             <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>

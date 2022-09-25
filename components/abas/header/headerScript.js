@@ -25,7 +25,7 @@ export default {
                     content: 'projetos', action: 'projects' 
                 },
                 {
-                    content: 'mais', action: 'more' 
+                    content: 'about', action: 'about' 
                 }
             ]
         }

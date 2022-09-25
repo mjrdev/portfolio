@@ -40,7 +40,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~assets/css/main_style', 
+    '~assets/main', 
     '~assets/sass/theme',
     '~assets/sass/app-sizes',
     '~assets/sass/fonts',
