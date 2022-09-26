@@ -1,0 +1,66 @@
+@import '~assets/sass/theme';
+@import '~assets/sass/app-sizes';
+@import '~assets/sass/fonts';
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-content: center; justify-content: center; align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.skill-container {
+    margin: 1rem 0;
+    gap: 0 4rem;
+}
+
+.title {
+    font-family: $font-primary;
+    color: $white;
+    font-size: 30pt;
+
+    align-self: center;
+    padding: 1rem; margin: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0; margin: 0;
+    gap: 0.2rem 0;
+    
+
+    li {
+        display: flex;
+        gap: 0 0.6rem;
+        width: 100%;
+        padding: 0.2rem 1rem;
+        box-shadow: 5px 5px 10px #00000010;
+        border-radius: 0.4rem;
+        cursor: default;
+        transition: 50ms;
+
+        i {
+            font-size: 24pt;
+            transition: .25s;
+            color: $white;
+        }
+
+        p {
+            font-family: $font-secundary;
+            font-size: 12pt;
+            font-weight: 600;
+            color: $white;
+            margin: 0.4rem 0;
+        }
+    }
+
+    li:hover {
+        transform: scale(1.05);
+    }
+}

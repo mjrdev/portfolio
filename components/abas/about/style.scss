@@ -6,7 +6,14 @@
 
     width: 100%;
     margin: 6rem 0;
-    display: flex; justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "content contact"
+    "more more";
+    align-items: center;
+    flex-direction: column;
+    gap: 0 1rem;
 
     .img {
         border-radius: 0.5rem;
@@ -17,7 +24,7 @@
     
     .content {
 
-        width: 80%;
+        grid-area: content;
     
         h1 {
             font-family: $font-primary, sans-serif;
@@ -37,4 +44,77 @@
             text-align: justify;
         }
     }
+
+    .contact {
+        grid-area: contact;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        gap: 0.5rem 0;
+
+        h2 {
+            margin: 0;
+            font-size: 16pt;
+        }
+
+        .input-email {
+            width: 80%;
+            border: 1px solid $color-primary; border-radius: 1rem;
+            background-color: #00000000;
+            height: 0.5rem;
+            padding: 1rem;
+        }
+        
+        .input-email::placeholder, .input-text::placeholder {
+            color: $black;  
+        }
+
+        .input-text {
+            width: 80%;
+            border: 1px solid $color-primary; border-radius: 1rem;
+            background-color: #00000000;
+            height: 5rem;
+            padding: 1rem;
+            resize: none;
+        }
+
+        .btn-send {
+            width: 10rem;
+            align-self: center;
+            padding: 0.5rem 3rem;
+            border-radius: 1rem;
+            color: $color-primary;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid $color-primary;
+            transition: .30s;
+        } .btn-send:hover {
+            background-color: $color-primary;
+            color: $white;
+        }
+    }
+
+    .more {
+        grid-area: more;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        .download {
+            width: 5rem;
+            display: flex; align-items: center; justify-content: center; gap: 4px;
+            margin-top: 2rem;
+            padding: 0.5rem 3rem;
+            border-radius: 1rem;
+            color: $color-primary;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid $color-primary;
+            transition: .30s;
+        } .download:hover {
+            background-color: $color-primary;
+            color: $white;
+        }
+
+        .to-top {
+            margin-top: 2rem;
+        }
+    }
+
+    
 }

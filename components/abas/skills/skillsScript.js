@@ -5,43 +5,37 @@ export default [
             {
                 name: 'TypeScript',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/typescript-icon.svg',
+                classIcon: 'devicon-typescript-plain',
                 score: 85,
             },
             {
                 name: 'Javascript',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/javascript.svg',
+                classIcon: 'devicon-javascript-plain',
                 score: 85,
             },
             {
                 name: 'PHP',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/php-alt.svg',
+                classIcon: 'devicon-php-plain',
                 score: 85,
             },
             {
                 name: 'Python',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/python.svg',
-                score: 85,
-            },
-            {
-                name: 'Dart',
-                description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/dart.svg',
+                classIcon: 'devicon-python-plain',
                 score: 85,
             },
             {
                 name: 'HTML5',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/html-5.svg',
+                classIcon: 'devicon-html5-plain',
                 score: 85,
             },
             {
                 name: 'CSS3',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/css-3.svg',
+                classIcon: 'devicon-css3-plain',
                 score: 85,
             }
             ]
@@ -52,67 +46,61 @@ export default [
             {   
                 name: 'NodeJs',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/nodejs-icon.svg',
+                classIcon: 'devicon-nodejs-plain',
                 score: 85
             },
             {   
                 name: 'VueJs',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/vue.svg',
+                classIcon: 'devicon-vuejs-plain',
                 score: 85
             },
             {   
                 name: 'NuxtJs',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/nuxt-icon.svg',
+                classIcon: 'devicon-nuxtjs-plain',
                 score: 85
             },
             {   
                 name: 'ReactJs',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/react.svg',
+                classIcon: 'devicon-react-plain',
                 score: 85
             },
             {   
                 name: 'Sass',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/sass.svg',
+                classIcon: 'devicon-sass-plain',
                 score: 85
             },
             {   
                 name: 'Laravel',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/laravel.svg',
+                classIcon: 'devicon-laravel-plain',
                 score: 85
             },
             {   
                 name: 'Git',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/git-icon.svg',
+                classIcon: 'devicon-git-plain',
                 score: 85
             },
             {   
                 name: 'Docker',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/docker-icon.svg',
-                score: 85
-            },
-            {   
-                name: 'ViteJs',
-                description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/vitejs.svg',
+                classIcon: 'devicon-docker-plain',
                 score: 85
             },
             {   
                 name: 'Bootstrap',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/bootstrap.svg',
+                classIcon: 'devicon-bootstrap-plain',
                 score: 85
             },
             {   
                 name: 'TailwindCSS',
                 description: '',
-                urlIcon: 'https://cdn.svgporn.com/logos/tailwindcss-icon.svg',
+                classIcon: 'devicon-tailwindcss-plain',
                 score: 85
             },
             ]

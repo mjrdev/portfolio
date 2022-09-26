@@ -7,7 +7,9 @@ export default menuScript
 <template>
 <div>
   <div class="btn-icon-menu" @click="changeMenu()">
-      <i class="material-icons">menu</i>
+    <span class="material-symbols-outlined">
+      menu
+    </span>
   </div>
 
       
