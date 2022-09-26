@@ -5,7 +5,7 @@
 .container-about, #about {
 
     width: 100%;
-    margin: 6rem 0;
+    margin-top: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -29,7 +29,7 @@
         h1 {
             font-family: $font-primary, sans-serif;
             color: $color-primary;
-            font-size: 2.5rem;
+            font-size: 25pt;
             margin: 0.5rem;
         }
 
@@ -56,7 +56,7 @@
         }
 
         .input-email {
-            width: 80%;
+            width: 25rem;
             border: 1px solid $color-primary; border-radius: 1rem;
             background-color: #00000000;
             height: 0.5rem;
@@ -68,7 +68,7 @@
         }
 
         .input-text {
-            width: 80%;
+            width: 25rem;
             border: 1px solid $color-primary; border-radius: 1rem;
             background-color: #00000000;
             height: 5rem;
@@ -95,6 +95,7 @@
     .more {
         grid-area: more;
         display: flex; flex-direction: column; align-items: center; justify-content: center;
+        margin: 6rem 0;
         .download {
             width: 5rem;
             display: flex; align-items: center; justify-content: center; gap: 4px;

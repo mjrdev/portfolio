@@ -24,7 +24,7 @@ export default {
         <button class="btn-send">Enviar</button>
     </div> 
 
-    <div class="more">
+    <div class="more" data-aos="fade-up">
         <a class="download">
         Currículo
         <span class="material-symbols-outlined">picture_as_pdf</span>

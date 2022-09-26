@@ -34,8 +34,11 @@
     background-color: #f3f3f3;
 }
 
+#about {
+    width: ($lg + 200px);
+}
 
-#header, #home, #skill, #projects, #about {
+#header, #home, #skill, #projects {
     width: $lg;
 }
 
