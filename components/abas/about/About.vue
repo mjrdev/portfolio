@@ -1,6 +1,35 @@
 <script>
 export default {
-    name: 'ok'
+    name: 'ok',
+    data() {
+        return {
+            form: {
+                name: '', email: '',body: ''
+            }
+        }
+    },
+    methods: {
+        getAPIkey() {
+
+        },
+        sendMail() {
+            fetch("https://formsubmit.co/ajax/jrgomesdev@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: this.form.name,
+                    email: this.form.email,
+                    message: this.form.body
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+            }
+    }
 }    
 </script>
 
@@ -16,13 +45,13 @@ export default {
         </p>
     </div>
 
-    <div class="contact">
+    <form class="contact" >
         <h2>Me enviei um email: </h2>
-        <input class="input-email" type="email" src="" alt="email" placeholder="Seu Nome">
-        <input class="input-email" type="text" src="" alt="email-body" placeholder="Email">
-        <textarea class="input-text" name="content" id="" col="15" rows="10" placeholder="Fale comigo"></textarea>
-        <button class="btn-send">Enviar</button>
-    </div> 
+        <input class="input-email" type="name" name="name" placeholder="Seu Nome" required v-model="form.name">
+        <input class="input-email" type="email" name="email" placeholder="Email" required v-model="form.email">
+        <textarea class="input-text" name="message" col="15" rows="10" placeholder="Fale comigo" required v-model="form.body"></textarea>
+        <button type="button" class="btn-send" @click="sendMail()">Enviar</button>
+    </form> 
 
     <div class="more" data-aos="fade-up">
         <a class="download">

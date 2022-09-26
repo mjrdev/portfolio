@@ -7,7 +7,7 @@
     width: 100%;
     margin-top: 6rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-areas: 
     "content contact"
     "more more";
@@ -16,15 +16,17 @@
     gap: 0 1rem;
 
     .img {
-        border-radius: 0.5rem;
+        border-radius: 0rem 2rem;
         width: 15rem; height: 15rem;
         float: left;
-        margin: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        box-shadow: 5px 5px 10px #00000010;
     }
     
     .content {
 
         grid-area: content;
+        margin: 1rem;
     
         h1 {
             font-family: $font-primary, sans-serif;
@@ -34,14 +36,18 @@
         }
 
         h3 {
-            font-size: 14pt;
+            font-size: 16pt;
             margin: 0;
+            font-family: $font-tertiary, sans-serif;
+            color: $color-secundary;
         }
 
         p {
-            font-size: 12pt;
+            font-size: 13pt;
             margin-top: 0;
             text-align: justify;
+            font-family: $font-tertiary, sans-serif;
+            color: $color-secundary;
         }
     }
 
@@ -53,6 +59,7 @@
         h2 {
             margin: 0;
             font-size: 16pt;
+            color: $color-secundary;
         }
 
         .input-email {
@@ -64,7 +71,7 @@
         }
         
         .input-email::placeholder, .input-text::placeholder {
-            color: $black;  
+            color: $color-secundary;
         }
 
         .input-text {

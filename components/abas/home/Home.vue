@@ -19,7 +19,7 @@
         </div>
 
         <div class="perfil">
-            <img src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="avata">
+            <img src="bighead.svg" alt="avata">
         </div>
         
 

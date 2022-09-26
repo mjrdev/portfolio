@@ -8,7 +8,7 @@ export default index
 
     <!-- NAVBAR -->
     <nav>
-        <Menu :abas="abas"/>
+        <Menu class="menu" :abas="abas"/>
 
         <div class="painel">
             <ul>
