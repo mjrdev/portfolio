@@ -40,8 +40,7 @@ export default {
         <img class="img" src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="" width="250px">
         <p class="text">
             <h3>Sobre</h3>
-            <p>Olá, tenho 20 anos de idade, apaixonado por tecnologia. Sou Programador, tive meu primeiro contato com programação aos 14 anos, com a linguagem JAVA, porém por falta de recursos e objetos de estudo, tive que pausar.
-            Porém aos 16 anos retornei aos estudos agora em PHP e Python, porém pelos recursos de hardware limitados novamente acabei migrando para o Javascript, onde pude me desenvolver e me estabelecer até hoje. Há quase 4 anos venho estudando e me desenvolvendo para entregar o melhor do meu trabalho e dedicação.</p>
+            <p>Olá, Sou Manoel Júnior, atualmente tenho 20 anos de idade sou Programador Júnior. Minha primeira esperiência como programador foi aos 14 anos com Java, porém por falta de recursos acabei parando, aos poucos fui retornando aos estudos de programação, onde aprendi os meus primeiros códigos usando linguagens como PHP e Python. Foi no começo de 2019 onde pude me empenhar no estudo de programação onde tive como principal linguagem de estudo o JavaScript e seus Frameworks.</p>
         </p>
     </div>
 

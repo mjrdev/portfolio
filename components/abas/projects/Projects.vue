@@ -62,7 +62,10 @@
 
         <div class="container-projects">
 
-            <div class="item-project" v-for="(pjt, index) in projectsList">
+            <div class="item-project" v-for="(pjt, index) in projectsList"
+            :style="{
+              backgroundImage: `url(${pjt.url})`
+            }">
                 <h1>{{pjt.title}}</h1>
                 <p>{{pjt.description}}</p>
             </div>

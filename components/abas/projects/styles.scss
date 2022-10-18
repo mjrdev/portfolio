@@ -28,9 +28,11 @@
 
     .item-project {
         display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
-        flex: 0 0 200px;
-        width: 200px; height: 200px;
-        background-color: $color-primary;
+        flex: 0 0 300px;
+        width: 300px; height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         box-shadow: 5px 5px 10px #00000010;
 
         h1 {

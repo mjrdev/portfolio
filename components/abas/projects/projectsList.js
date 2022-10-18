@@ -1,11 +1,10 @@
 export default [
     {
-        title: 'Jogo da Velha',
-        description: 'Jogo feito puramente em JavaScript, HTML, CSS',
-        url: 'http://github.com/mjrdev'
+        title: 'App de Cotação',
+        url: "projects/quotes.png"
     },
     {
-        title: 'Client Riot', description: 'none', url: 'http://github.com/mjrdev'
+        title: 'Client Riot', description: 'none', url: "projects/riot-client.png"
     },
     {
         title: 'Aplicativo de Tarefas', description: 'none', url: 'http://github.com/mjrdev'
