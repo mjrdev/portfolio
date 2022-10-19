@@ -53,6 +53,9 @@
             <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>
                 <div :class="{
                     'item-project': true, 'animation-opacity': animation
+                }"
+                :style="{
+                    backgroundImage: `url(${projectsList[indexItemActive].url})`
                 }">
                     <h1>{{projectsList[indexItemActive].title}}</h1>
                     <p>{{projectsList[indexItemActive].description}}</p>
@@ -66,8 +69,10 @@
             :style="{
               backgroundImage: `url(${pjt.url})`
             }">
-                <h1>{{pjt.title}}</h1>
-                <p>{{pjt.description}}</p>
+            
+            <div class="bottom">
+              <h1>{{pjt.title}}</h1>
+            </div>
             </div>
 
         </div>
