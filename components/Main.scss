@@ -38,8 +38,12 @@
     width: ($lg + 200px);
 }
 
-#header, #home, #skill, #projects {
+#header, #home, #skill {
     width: $lg;
+}
+
+#projects {
+  width: 1200px;
 }
 
 @media only screen and (max-width: ($lg + 100px)) {

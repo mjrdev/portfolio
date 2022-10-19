@@ -65,15 +65,13 @@
 
         <div class="container-projects">
 
-            <div class="item-project" v-for="(pjt, index) in projectsList"
-            :style="{
-              backgroundImage: `url(${pjt.url})`
-            }">
+            <a class="item-project" v-for="(pjt, index) in projectsList" href="https://mjrdev.github.io/quotes/" target="_blank">
+            <div class="wallpaper" :style="{ backgroundImage: `url(${pjt.url})`}"></div>
             
             <div class="bottom">
-              <h1>{{pjt.title}}</h1>
+                <h1>{{pjt.title}}</h1>
             </div>
-            </div>
+            </a>
 
         </div>
     </div>
