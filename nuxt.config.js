@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   router: {
     base: '/portfolio/'
@@ -27,7 +27,7 @@ export default {
       { name:"msapplication-TileColor", content:"#ffffff" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' },
