@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{297:function(o,t,n){"use strict";n.r(t);n(19),n(35);t.default=function(o,element){o.document.querySelectorAll("[data-container-item]").forEach((function(t){var n=t.dataset.containerItem,e=t.offsetTop;n==element&&o.scroll({top:"main"==element||e-95,behavior:"smooth"})}))}}}]);
