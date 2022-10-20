@@ -27,6 +27,18 @@ export default [
                 score: 85,
             },
             {
+              name: 'My SQL',
+              description: '',
+              classIcon: 'devicon-mysql-plain',
+              score: 85,
+            },
+            {
+                name: 'MongoDB',
+                description: '',
+                classIcon: 'devicon-mongodb-plain',
+                score: 85,
+              },
+            {
                 name: 'HTML5',
                 description: '',
                 classIcon: 'devicon-html5-plain',

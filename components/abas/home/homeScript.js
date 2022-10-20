@@ -12,29 +12,40 @@ export default {
     computed: mapState(['user']),
     methods: {
         writeMachineEffect: function (state) {
-            let vars = ['JavaScript', 'TypeScript'];
+            let vars = ['JavaScript', 'TypeScript', 'PHP', 'NodeJs', 'VueJs', 'ReactJs', 'TailwindCSS', 'SQL'];
+            let lang = 0;
             let i = 0;
             let write = true
+            let count = 0
 
             function writeMachine() {
+                if(count === vars[lang].length * 2) {
+                    if(lang + 1 == vars.length) {
+                        lang = 0;
+                    } else {
+                        lang++;
+                    }
+                    count = 0;
+                } count++;
+
                 if(write) {
-                    state.language = vars[0].slice(0, i) + '|'
+                    state.language = vars[lang].slice(0, i) + '|'
                     i++
                 }
                 
                 if(!write) {
-                    state.language = vars[0].slice(0, i) + '|'
+                    state.language = vars[lang].slice(0, i) + '|'
                     i--
                 }
             }
 
             setInterval(() => {
 
-                vars[0].length == i ? (write = !write) : write;
+                vars[lang].length == i ? (write = !write) : write;
                 i == 0 ? write = true : write;
 
                 writeMachine()
-            },180)
+            },250)
 
             function revWrite() {
 

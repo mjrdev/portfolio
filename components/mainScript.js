@@ -12,30 +12,31 @@ export default {
     components: { Header, Home, Skills, Projects, About },
     data() {
         return {
-            scrollY: 0,
-            headerFloat: true,
-            scrollUp: true,
-            headerAbsolute: true,
             color: 'red',
-            eventScroll: null,
-            time: null
+            timeEventsHeader: null,
+            posScrollY: 0,
         }
     },
     transition: 'header',
     mounted() {
 
-        let dataComponent = this;
+      const eventFunction = () => {
+        this.timeEventsHeader ? clearTimeout(this.timeEventsHeader) : null
+        this.timeEventsHeader = setTimeout(() => {
+          
+          const position = window.scrollY;
+          if(position > this.posScrollY) {
+            console.log('para baixo');
+          } else {
+            console.log('para cima');
+          }
 
-        function handleScroll() {
-            
-            clearInterval(dataComponent.time);
+          this.posScrollY = position
 
-            dataComponent.time = setTimeout(() => {
-                dataComponent.scrollY = window.scrollY
-            }, 20)
-        }
+        }, 500)
+      }
 
-        this.eventScroll = document.addEventListener('scroll', handleScroll)
+      addEventListener('scroll', eventFunction)
     },
     methods: {
         

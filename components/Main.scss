@@ -9,10 +9,14 @@
 
 .header-container {
     width: 100%;
+    position: fixed;
+    top: 0;
     display: flex; justify-content: center;
+    background-color: #fff;
 }
 
 .home-container {
+    margin-top: 10rem;
     width: 100%;
     display: flex; justify-content: center;
 }
