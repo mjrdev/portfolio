@@ -13,6 +13,7 @@
 .skill-container {
     margin: 1rem 0;
     gap: 0 4rem;
+    width: 100%;
 }
 
 .title {
@@ -38,7 +39,7 @@
     li {
         display: flex; align-items: center;
         gap: 0 0.6rem;
-        width: 100%;
+        width: 90%;
         padding: 0.2rem 1rem;
         box-shadow: 5px 5px 10px #00000010;
         border-radius: 0.4rem;

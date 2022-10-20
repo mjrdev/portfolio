@@ -32,10 +32,16 @@
         }
         .contact {
             width: 100%;
+
+            .input-email, .input-text {
+              width: 95%;
+            }
         }
     }
 }
 @media only screen and (max-width: $sm) {
-    
+    .input-email, .input-text {
+      width: 95%;
+    }
 }
 

@@ -47,7 +47,7 @@
 
 <template>
     <div class="projects" data-aos="fade-up">
-        <h1 class="title-projects" >Projetos</h1>
+        <h1 class="title-projects">Projetos</h1>
 
         <div class="carousel">
             <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>
@@ -65,8 +65,8 @@
 
         <div class="container-projects">
 
-            <a class="item-project" v-for="(pjt, index) in projectsList" href="https://mjrdev.github.io/quotes/" target="_blank">
-            <div class="wallpaper" :style="{ backgroundImage: `url(${pjt.url})`}"></div>
+            <a class="item-project" v-for="(pjt, index) in projectsList" :href="pjt.url" target="_blank">
+            <div class="wallpaper" :style="{ backgroundImage: `url(${pjt.urlImage})`}"></div>
             
             <div class="bottom">
                 <h1>{{pjt.title}}</h1>

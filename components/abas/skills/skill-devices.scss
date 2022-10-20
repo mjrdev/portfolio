@@ -12,6 +12,7 @@
     .skill {
         .skill-container {
             width: 90%;
+            gap: 0;
         }
     }
 }
@@ -19,7 +20,8 @@
 @media only screen and (max-width: $sm) {
     .skill {
         .skill-container {
-            width: 100%;
+            width: 90%;
+            gap: 0;
         }
     }
 }
