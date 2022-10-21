@@ -1,3 +1,4 @@
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -36,6 +37,9 @@ export default {
         rel: 'stylesheet',
         href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:ital,wght@0,300;1,500&family=Raleway:wght@500;700;800;900&family=Work+Sans:wght@300;400;600&display=swap"
       }
+    ],
+    script: [
+      
     ]
   },
 

@@ -28,13 +28,13 @@ export default {
         this.timeEventsHeader = setTimeout(() => {
           
           const position = window.scrollY;
-          if(position <= 300) {
+          if(position <= 100) {
             this.animation['default-header'] = true;
             this.animation['animation-in'] = false;
             this.animation['animation-out'] = false;
             return
           }
-          if(position > this.posScrollY) {
+          if(position >= this.posScrollY) {
             this.animation['animation-in'] = true;
             this.animation['animation-out'] = false;
             this.animation['default-header'] = false;
@@ -46,7 +46,7 @@ export default {
 
           this.posScrollY = position
 
-        }, 100)
+        }, 50)
       }
 
       addEventListener('scroll', eventFunction)

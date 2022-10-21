@@ -1,12 +1,38 @@
 
 @media only screen and (min-width: ($md + 1px)) {
-    .carousel {
-        display: none;
-    }
+  
 }
 
-@media only screen and (max-width: $md) {
-    .container-projects {
-        display: none;
+@media only screen and (max-width: $lg) {
+  .container-projects {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scroll-margin-left: 1000px;
+    scroll-snap-type: x mandatory;
+    width: 80%;
+    height: 300px;
+
+    
+    .item-project {
+      scroll-snap-align: center;
     }
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $color-primary;
+    transition: 100ms;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $color-primary-dark;
+  }
 }

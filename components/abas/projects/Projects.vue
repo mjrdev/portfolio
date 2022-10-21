@@ -49,20 +49,6 @@
     <div class="projects" data-aos="fade-up">
         <h1 class="title-projects">Projetos</h1>
 
-        <div class="carousel">
-            <span class="material-symbols-outlined arrow" @click="carouselScroll('left')">chevron_left</span>
-                <div :class="{
-                    'item-project': true, 'animation-opacity': animation
-                }"
-                :style="{
-                    backgroundImage: `url(${projectsList[indexItemActive].url})`
-                }">
-                    <h1>{{projectsList[indexItemActive].title}}</h1>
-                    <p>{{projectsList[indexItemActive].description}}</p>
-                </div>
-            <span class="material-symbols-outlined arrow" @click="carouselScroll('right')">chevron_right</span>
-        </div>
-
         <div class="container-projects">
 
             <a class="item-project" v-for="(pjt, index) in projectsList" :href="pjt.url" target="_blank">
