@@ -11,8 +11,34 @@
     width: 100%;
     position: fixed;
     top: 0;
-    display: flex; justify-content: center;
+    display: flex; justify-content: center; align-items: center;
     background-color: #fff;
+    z-index: 1;
+}
+
+.default-header {
+    height: 10rem;
+    transition: 200ms;
+}
+
+.animation-in { animation-name: in; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; }
+@keyframes out {
+    from {
+        transform: translateY(-100%); 
+    }
+    to {
+        transform: translateY(0);; 
+    }
+}
+
+.animation-out { animation-name: out; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; }
+@keyframes in {
+    from {
+        transform: translateY(0); 
+    }
+    to {
+        transform: translateY(-100%); 
+    }
 }
 
 .home-container {

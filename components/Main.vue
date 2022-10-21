@@ -6,7 +6,9 @@
 
 <template>
 <div id="portfolio">
-    <div class="header-container" data-container-item="header">
+    <div class="header-container" data-container-item="header"
+    :class="animation">
+      <h1></h1>
         <Header id="header"/>
     </div>
 

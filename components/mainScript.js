@@ -15,6 +15,9 @@ export default {
             color: 'red',
             timeEventsHeader: null,
             posScrollY: 0,
+            animation: {
+              'animation-in': false, 'animation-out': false, 'default-header': true
+            },
         }
     },
     transition: 'header',
@@ -25,15 +28,25 @@ export default {
         this.timeEventsHeader = setTimeout(() => {
           
           const position = window.scrollY;
+          if(position <= 300) {
+            this.animation['default-header'] = true;
+            this.animation['animation-in'] = false;
+            this.animation['animation-out'] = false;
+            return
+          }
           if(position > this.posScrollY) {
-            console.log('para baixo');
+            this.animation['animation-in'] = true;
+            this.animation['animation-out'] = false;
+            this.animation['default-header'] = false;
           } else {
-            console.log('para cima');
+            this.animation['animation-out'] = true;
+            this.animation['animation-in'] = false;
+            this.animation['default-header'] = false;
           }
 
           this.posScrollY = position
 
-        }, 500)
+        }, 100)
       }
 
       addEventListener('scroll', eventFunction)
