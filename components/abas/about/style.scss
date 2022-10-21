@@ -98,7 +98,14 @@
             color: $color-primary;
             background-color: #fff;
         }
+
+        .message {
+            display: flex; justify-content: center; align-items: center;
+            background-color: rgb(203, 237, 203); border-radius: 5px;
+            width: 95%; height: 2rem;
+        }
     }
+
 
     .more {
         grid-area: more;

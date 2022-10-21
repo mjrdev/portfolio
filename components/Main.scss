@@ -21,23 +21,23 @@
     transition: 200ms;
 }
 
-.animation-in { animation-name: in; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; }
+.animation-in { animation-name: in; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; box-shadow: 0 3px 8px #00000069; }
 @keyframes out {
     from {
-        transform: translateY(-100%); 
+        transform: translateY(-105%); 
     }
     to {
         transform: translateY(0);; 
     }
 }
 
-.animation-out { animation-name: out; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; }
+.animation-out { animation-name: out; animation-duration: 500ms; animation-fill-mode: forwards; height: 6rem; transition: 200ms; box-shadow: 0 3px 8px #0000002e;  }
 @keyframes in {
     from {
         transform: translateY(0); 
     }
     to {
-        transform: translateY(-100%); 
+        transform: translateY(-105%); 
     }
 }
 
