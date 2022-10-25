@@ -15,10 +15,6 @@ export default index
                 <li class="item" v-for="aba in abas">
                     <span class="item-text" @click="clickSkill(aba.action)">{{aba.content}}</span>
                 </li>
-
-                <li :class="{'painel-item-contact-btn':true}" @click="contact = true">
-                    contato
-                </li>
             </ul>
         </div>
     </nav>

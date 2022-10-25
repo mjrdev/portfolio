@@ -16,7 +16,7 @@ export default {
             contact: false,
             abas: [
                 {
-                    content: 'início', action: 'home'
+                    content: 'início', action: 'header'
                 },
                 {
                     content: 'habilidades', action: 'skill' 
