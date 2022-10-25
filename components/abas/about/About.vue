@@ -46,8 +46,8 @@ export default {
 </script>
 
 <template>
-<div class="container-about" data-aos="fade-up">
-    <div class="content">
+<div class="container-about" >
+    <div class="content" data-aos="fade-up">
         <h1 align="center" class="title-namw">Manoel Gomes Lindoso Júnior</h1>
         <img class="img" src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="" width="250px">
         <p class="text">
@@ -58,7 +58,7 @@ export default {
         </p>
     </div>
 
-    <form class="contact" v-on:submit="sendMail">
+    <form class="contact" v-on:submit="sendMail" data-aos="fade-up">
         <h2>Me enviei um email: </h2>
         <input class="input-email" type="name" name="name" placeholder="Seu Nome" required v-model="form.name">
         <input class="input-email" type="email" name="email" placeholder="Email" required v-model="form.email">
@@ -68,11 +68,10 @@ export default {
     </form> 
 
     <div class="more" data-aos="fade-up">
-        <a class="download">
+        <a class="download" href="/curriculo.pdf" download>
         Currículo
         <span class="material-symbols-outlined">picture_as_pdf</span>
         </a>
-    <a class="to-top"> voltar ao início </a>
     </div>
 </div>
 </template>
