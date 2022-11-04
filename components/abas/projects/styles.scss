@@ -28,10 +28,11 @@
 
     .item-project {
         display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
-        flex: 0 0 250px;
-        width: 250px; height: 250px;
+        flex: 0 0 300px;
+        width: 300px; height: 250px;
         //box-shadow: 3px 3px 10px #00000021;
         transition: 300ms;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.212);
         
 
         h1 {
