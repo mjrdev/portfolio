@@ -5,8 +5,8 @@ export default [
     { title: 'API RESTFULL + Autenticação JWT', urlImage: 'projects/apirf-ts.jpg', url: "https://github.com/mjrdev/webapp-login" },
     { title: 'Recriação Client Riot', urlImage: "projects/riot-client.jpg", url: "https://mjrdev.github.io/riotclient/" },
     { title: 'App de Tarefas Diárias', urlImage: 'projects/tasks.jpg', url: "https://mjrdev.github.io/apptasks" },
-    { title: 'Jogo PushBall', urlImage: "projects/em-breve.jpg", url: "https://mjrdev.github.io/portfolio" },
-    { title: 'Tela de login', urlImage: 'projects/login.png', url: "https://mjrdev.github.io/login-screen" },
-    { title: 'Anúncio Iphone 14 3D', urlImage: "projects/em-breve.jpg", url: "https://mjrdev.github.io/portfolio" },
-    { title: 'PHP Framework', urlImage: "projects/em-breve.jpg", url: "https://mjrdev.github.io/portfolio" },
+    { title: 'Plataforma de Cursos/Aulas', urlImage: "projects/courses.jpg", url: "https://mjrdev.github.io/portfolio" },
+    { title: 'Anúncio Iphone 14 3D', urlImage: "projects/iphone.jpg", url: "https://mjrdev.github.io/portfolio" },
+    { title: 'FastPHP Framework', urlImage: "projects/fastphp.jpg", url: "https://github.com/mjrdev/fastphp" },
+    { title: 'Sistema de Usuários/Produtos - PHP, Laravel, MySQL', urlImage: "projects/em-breve.jpg", url: "https://mjrdev.github.io/portfolio" },
 ]
