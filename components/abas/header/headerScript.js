@@ -11,24 +11,27 @@ let link =  [
 export default {
     components: { Menu },
     data() {
-        return {
-            aba: 0,
-            contact: false,
-            abas: [
-                {
-                    content: 'início', action: 'header'
-                },
-                {
-                    content: 'habilidades', action: 'skill' 
-                }, 
-                {
-                    content: 'projetos', action: 'projects' 
-                },
-                {
-                    content: 'about', action: 'about' 
-                }
-            ]
-        }
+      return {
+        aba: 0,
+        contact: false,
+        abas: [
+            {
+                content: 'início', action: 'header'
+            },
+            {
+                content: 'habilidades', action: 'skill' 
+          },
+            {
+              content: 'Certificações', action: 'formation' 
+          }, 
+            {
+                content: 'projetos', action: 'projects' 
+            },
+            {
+                content: 'about', action: 'about' 
+            }
+        ]
+      }
     },
     head() {
         return {

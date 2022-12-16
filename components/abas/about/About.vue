@@ -48,11 +48,13 @@ export default {
 <template>
 <div class="container-about" >
     <div class="content" data-aos="fade-up">
-        <h1 align="center" class="title-namw">Manoel Gomes Lindoso Júnior</h1>
-        <img class="img" src="https://avatars.githubusercontent.com/u/52384586?v=4" alt="" width="250px">
+        <h1 align="center" class="title-name">Manoel Gomes Lindoso Júnior</h1>
+        <img class="img" src="me.jpeg" alt="" width="250px">
         <p class="text">
             <h3>Sobre</h3>
-            <p>Olá, Sou Manoel Júnior, atualmente tenho 20 anos de idade sou Programador Júnior. Minha primeira experiência como programador foi aos 14 anos com Java, porém por falta de recursos acabei parando, aos poucos fui retornando aos estudos de programação, onde aprendi os meus primeiros códigos usando linguagens como PHP e Python. Foi no começo de 2019 onde pude me empenhar nos estudos de programação onde tive como principal linguagem de estudo o JavaScript e seus Frameworks.
+            <p>Olá, meu nome é Manoel Júnior tenho 21 anos de idade sou apaixonado por tecnologia e games. <br/>
+            Meu primeiro contato com programação e servidores foi aos 14 anos de idade com Java, PHP e Javascript.
+            Especialista em desenvolvimento Web FullStack com as melhores e atuais tecnologias do mercado e padrões de desenvolvimento e atualmente trabalho no desenvolvimento e manutenção de projetos Freelancer.
             <a href="https://www.linkedin.com/in/mjrdev/">linkedIn</a>
             </p>
         </p>

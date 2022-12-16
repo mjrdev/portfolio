@@ -47,6 +47,11 @@
     display: flex; justify-content: center;
 }
 
+.formation-container {
+  width: 100%;
+  display: flex; justify-content: center;
+}
+
 .skill-container {
     width: 100%;
     background-color: $color-primary;
@@ -68,6 +73,10 @@
     width: ($lg + 200px);
 }
 
+#formation {
+  max-width: 1600px;
+}
+
 #header, #home, #skill {
     width: $lg;
 }
@@ -77,7 +86,7 @@
 }
 
 @media only screen and (max-width: ($lg + 100px)) {
-    #header, #home, #skill, #projects, #about {
+    #header, #home, #skill, #projects, #about, #formation {
         width: $md;
     }
 
@@ -88,7 +97,7 @@
 }
 
 @media only screen and (max-width: ($md + 50px)) {
-    #header, #home, #skill, #projects, #about {
+    #header, #home, #skill, #projects, #about, #formation {
         width: 90%;
     }
 

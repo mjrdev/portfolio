@@ -15,9 +15,13 @@
     <div class="home-container" data-container-item="home">
         <Home id="home"/>
     </div>
-    
+
     <div class="skill-container" data-container-item="skill">
         <Skills id="skill"/>
+    </div>
+
+    <div class="formation-container" data-container-item="formation">
+        <Formation id="formation"/>
     </div>
 
     <div class="projects-container" data-container-item="projects">

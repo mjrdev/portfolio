@@ -17,7 +17,9 @@
 
     .img {
         border-radius: 50%;
-        width: 15rem; height: 15rem;
+        width: 15rem; height: 15rem; /* height of container */
+        object-fit: cover;
+        object-position: 20% 50%;
         float: left;
         margin: 0rem 1rem 0rem 0rem;
         box-shadow: 5px 5px 10px #00000010;

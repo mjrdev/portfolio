@@ -59,37 +59,37 @@ nav {
 }
 
 
-// BOTÃO DE CONTATO 
+// // BOTÃO DE CONTATO 
 
-.painel-item-contact-btn {
+// .painel-item-contact-btn {
 
-    font-family: $font-secundary;
+//     font-family: $font-secundary;
 
-    transition: 150ms;
+//     transition: 150ms;
 
-    width: 100%; padding: 5pt 10pt;
-    font-size: 12pt; color: $color-primary;
-    list-style-type: none;
+//     width: 100%; padding: 5pt 10pt;
+//     font-size: 12pt; color: $color-primary;
+//     list-style-type: none;
 
-    border: 1px solid $color-primary; border-radius: 10px;
-    margin-left: $navbar-item-spacing;
+//     border: 1px solid $color-primary; border-radius: 10px;
+//     margin-left: $navbar-item-spacing;
 
-    cursor: pointer;
-}
+//     cursor: pointer;
+// }
 
-.painel-item-contact-btn>span {
-    color: $white;
-    width: 2px;
-    height: 100%;
-    display: block;
-    position: relative;
-}
+// .painel-item-contact-btn>span {
+//     color: $white;
+//     width: 2px;
+//     height: 100%;
+//     display: block;
+//     position: relative;
+// }
 
-.painel-item-contact-btn:hover {
+// .painel-item-contact-btn:hover {
 
-    border: 1px solid $color-primary;
-    background-color: $color-primary-dark;
-    color: $gray-low;
+//     border: 1px solid $color-primary;
+//     background-color: $color-primary-dark;
+//     color: $gray-low;
 
-    cursor: pointer;
-}
+//     cursor: pointer;
+// }

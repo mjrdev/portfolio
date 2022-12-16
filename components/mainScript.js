@@ -3,13 +3,14 @@ import Home from "./abas/home/Home.vue";
 import Skills from "./abas/skills/Skills.vue";
 import Projects from "./abas/projects/Projects.vue";
 import About from "./abas/about/About.vue";
+import Formation from "./abas/formation/Formation.vue";
 
 import aos from '~/mixins/aos.js';
 
 export default {
     mixins: [aos],
     name: 'Main',
-    components: { Header, Home, Skills, Projects, About },
+    components: { Header, Home, Skills, Projects, About, Formation },
     data() {
         return {
             color: 'red',

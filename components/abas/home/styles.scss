@@ -3,7 +3,7 @@
 @import '~assets/sass/fonts';
 
 .content {
-    margin: 0;
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50vh 15vh;
@@ -63,7 +63,8 @@
     align-items: center;
 
     img {
-        height: 40vh; margin-top: 1rem;
+        width: 17rem;
+        height: 17rem; margin-top: 1rem;
         border-radius: 50%;
     }
 }
@@ -73,7 +74,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
 
     .languages {
 
