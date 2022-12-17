@@ -6,5 +6,5 @@ export default [
     { title: 'Recriação Client Riot', urlImage: "projects/riot-client.jpg", url: "https://mjrdev.github.io/riotclient/" },
     { title: 'App de Tarefas Diárias', urlImage: 'projects/tasks.jpg', url: "https://mjrdev.github.io/apptasks" },
     { title: 'Site de votação e criação de enquetes', urlImage: "projects/fastphp.jpg", url: "https://github.com/mjrdev/fastphp" },
-    { title: 'Microserviço de Notificação em NodeJS', urlImage: "projects/em-breve.jpg", url: "https://mjrdev.github.io/portfolio" },
+    { title: 'Microserviço de Notificação em NodeJS', urlImage: "projects/microservice.jpg", url: "https://github.com/mjrdev/microservice-notifications" },
 ]

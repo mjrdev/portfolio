@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-  <div class="formations">
+  <div class="formations" data-aos="fade-up">
     <h1 class="title-formations">Formação e Certificações</h1>
 
     <div class="formation">
@@ -95,7 +95,7 @@ export default {
       gap: 1rem;
 
       .certification {
-        width: 40%;
+        width: 45%;
         border: 2px solid $color-primary;
         border-radius: 10px;
         padding: 0.2rem;
@@ -137,6 +137,7 @@ export default {
 
     .certifications {
       flex-direction: column;
+      width: 100%;
 
       .certification {
         width: 100%;
