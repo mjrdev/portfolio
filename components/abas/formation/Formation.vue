@@ -29,6 +29,27 @@ export default {
           <p>Udemy</p>
         </h5>
       </div>
+
+      <div class="certification">
+        <span class="material-symbols-outlined icon-formation icon">
+          badge
+        </span>
+        <h5>
+          Certificador de Aprendizado HTML, CSS, JavaScript, NodeJS, SQL, Git e mais.
+          <p>Rocketseat</p>
+        </h5>
+      </div>
+
+      <div class="certification">
+        <span class="material-symbols-outlined icon-formation icon">
+          badge
+        </span>
+        <h5>
+          Fundamentos de APIs, ReactJS, TypeScript; SQL avançado e GitHub para times.
+          <p>Rocketseat</p>
+        </h5>
+      </div>
+
       <div class="certification">
         <span class="material-symbols-outlined icon-formation icon">
           badge
