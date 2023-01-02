@@ -33,6 +33,12 @@ export default [
                 score: 85,
               },
               {
+                name: 'PosgreSQL',
+                description: '',
+                classIcon: 'devicon-postgresql-plain',
+                score: 85,
+              },
+              {
                   name: 'MongoDB',
                   description: '',
                   classIcon: 'devicon-mongodb-plain',
@@ -48,6 +54,12 @@ export default [
                   name: 'CSS3',
                   description: '',
                   classIcon: 'devicon-css3-plain',
+                  score: 85,
+              },
+              {
+                  name: 'Python',
+                  description: '',
+                  classIcon: 'devicon-python-plain',
                   score: 85,
               }
               ]
@@ -90,6 +102,12 @@ export default [
                   description: '',
                   classIcon: 'devicon-laravel-plain',
                   score: 85
+                },
+                {   
+                  name: 'django',
+                  description: '',
+                  classIcon: 'devicon-django-plain',
+                  score: 85
               },
               {   
                   name: 'Git',
@@ -114,7 +132,7 @@ export default [
                   description: '',
                   classIcon: 'devicon-tailwindcss-plain',
                   score: 85
-              },
+              }
             ]
         }
     ]

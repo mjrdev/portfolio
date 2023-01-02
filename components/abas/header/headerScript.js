@@ -28,7 +28,7 @@ export default {
                 content: 'projetos', action: 'projects' 
             },
             {
-                content: 'about', action: 'about' 
+                content: 'sobre', action: 'about' 
             }
         ]
       }
