@@ -14,7 +14,7 @@ export default {
       <div class="infos">
         <h5>UNOPAR (Universidade do Norte do Paraná)</h5>
         <h3>Análise e Desenvolvimento de Sistemas</h3>
-        <h5>12/2022 - 12/2024</h5>
+        <h5>01/2023 - 12/2024</h5>
       </div>
     </div>
 
