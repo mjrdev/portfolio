@@ -1,6 +1,6 @@
 export default [
   { title: 'Site de criação e votação de enquetes', urlImage: "projects/polls.jpg", url: "https://github.com/mjrdev/fastphp" },
-    { title: 'Design Loja Virtual', urlImage: 'projects/webstore.jpg', url: "https://mjrdev.github.io/webstore" },
+    { title: 'Design Loja Virtual React', urlImage: 'projects/webstore.jpg', url: "https://mjrdev.github.io/webstore" },
     { title: 'Cátalogo de Filmes', urlImage: "projects/movie_catalog.jpg", url: "https://github.com/mjrdev/moviecatalog" },
     { title: 'Chat em Real Time', urlImage: "projects/ninjachat.jpg", url: "https://github.com/mjrdev/ninjachat" },
     { title: 'Aplicativo de Cotações', urlImage: "projects/quotes.jpg", url: "https://mjrdev.github.io/quotes" },
